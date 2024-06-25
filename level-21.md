@@ -1,7 +1,8 @@
+
 # 第21关 reset
 
 > There are two files to be committed.  The goal was to add each file as a separate commit, however both were added by accident.  Unstage the file 'to_commit_second.rb' using the reset command (don't commit anything).
-> 
+>
 > 已经有2个文件即将被提交（即是已加入到暂存区），但为了把每个文件分别提交，需要把 'to_commit_second.rb' 这个文件用 reset 命令从暂存区中移出（不要提交任何文件）。
 
 呵呵，本关和第12关很像啊，都是要从暂存区移出文件，甚至你用第12关的 `git rm --cached` 命令就可以完成任务，但是既然用已有的知识就可以解决，为什么还要专门设这么一关？
@@ -10,8 +11,8 @@
 
 把一个已修改过的文件从暂存区移出的命令是：
 
-```
-$ git reset your-file
+```shell
+git reset your-file
 ```
 
 第21关过关画面如下：

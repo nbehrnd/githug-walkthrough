@@ -1,3 +1,4 @@
+
 # 第23关 checkout_file
 
 > A file has been modified, but you don't want to keep the modification.  Checkout the 'config.rb' file from the last commit.
@@ -6,8 +7,8 @@
 
 这还是一个撤销操作。如果你想放弃工作目录中已经修改过的内容，就用这个命令：
 
-```
-$ git checkout your-file
+```shell
+git checkout your-file
 ```
 
 Git 会用最后一次提交的文件覆盖掉工作目录中的同名文件。但做这个操作一定要谨慎，因为这个操作是不可以被撤销的，执行之后你修改过的内容就找不回来了。

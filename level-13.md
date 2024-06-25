@@ -1,3 +1,4 @@
+
 # 第13关 stash
 
 > You've made some changes and want to work on them later. You should save them, but don't commit them.
@@ -8,10 +9,10 @@
 
 相关命令如下：
 
-```
-$ git stash
-$ git stash list
-$ git stash pop
+```shell
+git stash
+git stash list
+git stash pop
 ```
 
 第1条命令把当前环境“藏”起来；第2条命令列出被“藏”的环境；第3条命令恢复被“藏”的环境。

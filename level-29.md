@@ -1,14 +1,15 @@
+
 # 第29关 diff
 
 > There have been modifications to the 'app.rb' file since your last commit. Find out whick line has changed.
-> 
+>
 > 最后一次提交之后，你又修改了 'app.rb' 这个文件。找到哪一行被修改过。
 
 如果仓库中的文件被修改过，它的状态就变为 'modified'，可以使用下面的命令查看被修改的细节：
 
-```
-$ git diff
-$ git diff your-file
+```shell
+git diff
+git diff your-file
 ```
 
 第1条命令是列出所有被修改过的文件的细节，第2条命令是列出指定文件的被修改过的细节。

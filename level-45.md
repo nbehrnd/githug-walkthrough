@@ -1,14 +1,15 @@
+
 # 第45关 rename_commit
 
 > Correct the typo in the message of your first (non-root) commit.
-> 
+>
 > 在第一次提交时有一个拼写错误，修正它。
 
 在使用 Git 的过程中，难免会出现要改写提交内容的情况，Git 提供了非常强大的修改历史的工具，我们就以本关为例，详细说明如何修改历史，并在接下来的第46关和第48关再做另外2个练习。
 
 先看一下提交日志：
 
-```
+```shell
 $ git log --pretty=oneline
 771b71dca888e80d2bf716672b1475e85a27d695 Second commit
 06973a37415e520eff0bace38181f131698cd888 First coommit
@@ -19,16 +20,16 @@ $ git log --pretty=oneline
 
 修改提交历史的命令格式是：
 
-```
-$ git rebase -i hash-code
+```shell
+git rebase -i hash-code
 ```
 
 我们已经在第40关接触过 ```git rebase``` 命令，当时是用它来合并分支。但是加了 ```-i``` 参数之后，用途就变为修改提交历史了。其后再跟一个某一条提交日志的哈希值，表示要修改这条日志之前的提交历史。
 
 现在，找到 "First coommit" 下面一条日志的哈希值 "37d84aed48418346c4"，然后输入下面的命令：
 
-```
-$ git rebase -i 37d84aed48418346c4
+```shell
+git rebase -i 37d84aed48418346c4
 ```
 
 这时，会启动文本编辑器，显示如下内容：

@@ -1,3 +1,4 @@
+
 # 第18关 push_tags
 
 > There are tags in the repository that aren't pushed into remote repository. Push them now.
@@ -8,8 +9,8 @@
 
 把标签推送到服务器的命令如下：
 
-```
-$ git push --tags
+```shell
+git push --tags
 ```
 
 此命令执行之后，当别人用 `git clone` 或者 `git pull` 从远程仓库读取时，就会看到你打过的标签了。

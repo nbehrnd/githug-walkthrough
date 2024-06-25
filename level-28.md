@@ -1,15 +1,16 @@
+
 # 第28关 push
 
 > Your local master branch has diverged from the remote origin/master branch. Rebase your commit onto origin/master and push it to remote.
-> 
+>
 > 你本地仓库的代码是由远程仓库的 origin/master 分支创建的。rebase 你的更新到 origin/master，然后提交到远程仓库。
 
 当你和其他伙伴一起开发时，你们都从远程仓库把文件 clone 到本地，然后分头开发，再分头推送到远程仓库中，推送命令如下：
 
-```
-$ git push remote-name branch-name
-$ git push -u remote-name branch-name
-$ git push
+```shell
+git push remote-name branch-name
+git push -u remote-name branch-name
+git push
 ```
 
 第1条命令是把本地的文件推送到远程仓库，remote-name是远程仓库名，branch-name是分支名，如果你没有重命名过它们，那它们默认的名称分别是 origin 和 master；第2条命令加了一个 `-u` 参数，目的是让 Git 把 remote-name 和 branch-name 记住，下次就不用再写这2个参数了；第3条命令就是使用过 `-u` 参数以后的推送命令，不需要任何参数了。

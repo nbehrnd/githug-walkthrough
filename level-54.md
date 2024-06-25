@@ -1,14 +1,15 @@
+
 # 第54关 conflict
 
 > You need to merge mybranch into the current branch (master). But there may be some incorrect changes in mybranch which may cause conflicts. Solve any merge-conflicts you come across and finish the merge.
-> 
+>
 > 你要把名为 mybranch 的分支合并到当前分支 master 中，但是可能有些地方的修改会引起冲突。请解决冲突，完成合并。
 
 在第38关我们学习过 `git merge` 命令，但在工作中难免会发生合并冲突。发生冲突的原因是合并分支与被合并分支都修改了同一个文件的同一行代码，此时 Git 系统要求你介入，决定是保留你的代码还是别人的代码，或者都保留下来。
 
 当发生冲突时，Git 会给出以下提示：
 
-```
+```shell
 $ git merge mybranch
 Auto-merging poem.txt
 CONFLICT (content): Merge conflict in poem.txt

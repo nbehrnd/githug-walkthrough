@@ -1,13 +1,14 @@
+
 # 第38关 merge
 
 > We have a file in the branch 'feature'; Let's merge it to the master branch.
-> 
+>
 > 你有一个文件在分支 'feature'，把它合并到 master 分支。
 
 当我们在分支完成修改和测试之后，就可以把分支合并到主线上了，它的命令是：
 
-```
-$ git merge branch-name
+```shell
+git merge branch-name
 ```
 
 执行这条命令之前，要先切换到主线（一般是 master 分支），然后把待合并的分支名作为参数。

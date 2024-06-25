@@ -1,16 +1,17 @@
+
 # 第9关 status
 
 > There are some files in this repository, one of the files is untracked, which file is it?
-> 
+>
 > 仓库中有一个文件是未被 Git 管理的，请问是哪一个文件？
 
 Git 管理下的文件有多种状态，在工作中你经常需要先查询文件状态才能决定下一步做什么或怎么做，所以它的重要性和 Linux 的 `ls` 命令是一样重要的，是几乎所有操作的起点。
 
 查看仓库状态的命令是：
 
-```
-$ git status
-$ git status -s
+```shell
+git status
+git status -s
 ```
 
 第1条命令表示以详细格式查看，第2条命令表示以紧凑格式查看。默认的详细格式包含以下内容：

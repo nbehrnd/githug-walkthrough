@@ -1,7 +1,8 @@
+
 # 第49关 bisect
 
 > A bug was introduced somewhere along the way.  You know that running "ruby prog.rb 5" should output 15.  You can also run "make test".  What are the first 7 chars of the hash of the commit that introduced the bug.
-> 
+>
 > 在开发过程中引入了一个 bug。已知运行 "ruby prog.rb 5" 应该输入 15，你也可以运行 "make test" 进行测试。你需要确定引入 bug 的那次提交的哈希值的前7位。
 
 在程序持续迭代的过程中不免会引入 bug，除了定位 bug 的代码片断，我们还想知道 bug 是在什么时间被引入的，这时就可以借助 Git 提供的 `bisect` 工具来查找是哪次提交引入了 bug。`bisect` 是用二分法来查找的，就像用二分查找法查找数组元素那样。
@@ -10,7 +11,7 @@
 
 我们先看一下提交历史，一共20次提交：
 
-```
+```shell
 $ git log --pretty=oneline
 12628f463f4c722695bf0e9d603c9411287885db Another Commit
 979576184c5ec9667cf7593cf550c420378e960f Another Commit
@@ -36,7 +37,7 @@ f608824888b83bbedc1f658be7496ffea467a8fb First commit
 
 首先启动 `bisect` 查找流程：
 
-```
+```shell
 $ git bisect start
 $ git bisect good f608824888b
 $ git bisect bad 12628f463f4
@@ -48,7 +49,7 @@ Bisecting: 9 revisions left to test after this (roughly 3 steps)
 
 这时，我们对程序进行测试，测试通过，所以我们反馈 `good`：
 
-```
+```shell
 $ make test
 ruby prog.rb 5 | ruby test.rb
 $ git bisect good
@@ -58,7 +59,7 @@ Bisecting: 4 revisions left to test after this (roughly 2 steps)
 
 Git 继续进行二分查找，这次定位的哈希值是 "18ed2ac1522a01"，我们再对程序测试，测试没有通过，所以我们反馈 `bad`：
 
-```
+```shell
 $ make test
 ruby prog.rb 5 | ruby test.rb
 make: *** [test] Error 1

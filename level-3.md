@@ -1,7 +1,8 @@
+
 # 第3关 add
 
 > There is a file in your folder called 'README', you should add it to your staging area.
-> 
+>
 > 目录中有一个名为 'README' 的文件，把它添加到暂存区。
 
 仓库初始化了，用户信息也设置好了，就该管理文件了。我们先看一下 Git 文件的生命周期：
@@ -12,10 +13,10 @@
 
 把文件添加到暂存区的命令是这样的：
 
-```
-$ git add README
-$ git add *.md
-$ git add -A
+```shell
+git add README
+git add *.md
+git add -A
 ```
 
 第1条命令表示把 README 这个文件添加到暂存区，第2条命令表示把 md 扩展名的文件都添加到暂存区，第3条命令表示把所有没加到暂存区的文件都添加到暂存区。
