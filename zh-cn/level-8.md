@@ -7,4 +7,4 @@
 
 在上一关讲到的忽略规则中，最后一条是把某个文件排除在已有规则之外，正好用它来解这一关：
 
-![第8关 include](images/level-8-include.png)
+![第8关 include](./images/level-8-include.png)

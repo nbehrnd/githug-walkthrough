@@ -15,4 +15,4 @@ git submodule add module-url
 
 第55关过关画面如下：
 
-![第55关 submodule](images/level-55-submodule.png)
+![第55关 submodule](./images/level-55-submodule.png)

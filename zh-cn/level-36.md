@@ -15,4 +15,4 @@ git branch -d branch-name
 
 第36关过关画面如下：
 
-![第36关 delete_branch](images/level-36-delete-branch.png)
+![第36关 delete_branch](./images/level-36-delete-branch.png)

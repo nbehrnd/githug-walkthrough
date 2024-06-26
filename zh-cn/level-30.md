@@ -15,4 +15,4 @@ git blame your-file
 
 第30关过关画面如下：
 
-![第30关 blame](images/level-30-blame.png)
+![第30关 blame](./images/level-30-blame.png)

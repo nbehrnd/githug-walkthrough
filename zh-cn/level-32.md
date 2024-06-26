@@ -27,4 +27,4 @@ git checkout your-file
 
 第32关过关画面如下：
 
-![第32关 checkout](images/level-32-checkout.png)
+![第32关 checkout](./images/level-32-checkout.png)

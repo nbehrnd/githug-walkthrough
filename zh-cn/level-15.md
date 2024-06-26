@@ -9,4 +9,4 @@
 
 第15关过关画面如下：
 
-![第15关 restructure](images/level-15-restructure.png)
+![第15关 restructure](./images/level-15-restructure.png)

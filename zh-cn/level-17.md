@@ -20,4 +20,4 @@ git tag -d your-tag
 
 第17关过关画面如下：
 
-![第17关 tag](images/level-17-tag.png)
+![第17关 tag](./images/level-17-tag.png)

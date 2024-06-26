@@ -15,4 +15,4 @@ Git 会用最后一次提交的文件覆盖掉工作目录中的同名文件。�
 
 第23关过关画面如下：
 
-![第23关 checkout_file](images/level-23-checkout-file.png)
+![第23关 checkout_file](./images/level-23-checkout-file.png)

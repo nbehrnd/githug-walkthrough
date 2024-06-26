@@ -19,4 +19,4 @@ git branch
 
 第31关过关画面如下：
 
-![第31关 branch](images/level-31-branch.png)
+![第31关 branch](./images/level-31-branch.png)

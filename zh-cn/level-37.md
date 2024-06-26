@@ -15,4 +15,4 @@ git push remote-name branch-name
 
 第37关过关画面如下：
 
-![第37关 push_branch](images/level-37-push-branch.png)
+![第37关 push_branch](./images/level-37-push-branch.png)

@@ -15,4 +15,4 @@ git init
 
 该命令将创建一个名为 .git 的子目录，这个子目录含有 Git 管理仓库时要用的文件，.git 是一个隐藏目录，可以用 `ls -a` 查看。
 
-![第1关 init](images/level-1-init.png)
+![第1关 init](./images/level-1-init.png)

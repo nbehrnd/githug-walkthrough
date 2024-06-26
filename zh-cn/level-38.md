@@ -19,4 +19,4 @@ git merge branch-name
 
 第38关过关画面如下：
 
-![第38关 merge](images/level-38-merge.png)
+![第38关 merge](./images/level-38-merge.png)

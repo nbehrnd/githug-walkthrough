@@ -23,4 +23,4 @@ git add -A
 
 第3关过关画面如下：
 
-![第3关 add](images/level-3-add.png)
+![第3关 add](./images/level-3-add.png)

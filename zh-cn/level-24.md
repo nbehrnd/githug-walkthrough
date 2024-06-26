@@ -19,4 +19,4 @@ git remote
 
 第24关过关画面如下：
 
-![第24关 remote](images/level-24-remote.png)
+![第24关 remote](./images/level-24-remote.png)

@@ -31,4 +31,4 @@ index 1a271e9..4a80dda 100644
 
 第50关过关画面如下：
 
-![第50关 stage_lines](images/level-50-stage-lines.png)
+![第50关 stage_lines](./images/level-50-stage-lines.png)

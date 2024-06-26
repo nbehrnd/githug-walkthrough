@@ -19,4 +19,4 @@ git stash pop
 
 第13关过关画面如下：
 
-![第13关 stash](images/level-13-stash.png)
+![第13关 stash](./images/level-13-stash.png)

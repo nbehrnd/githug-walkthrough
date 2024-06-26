@@ -27,4 +27,4 @@ git push
 
 第28关过关画面如下：
 
-![第28关 push](images/level-28-push.png)
+![第28关 push](./images/level-28-push.png)

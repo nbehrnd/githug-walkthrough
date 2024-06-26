@@ -15,4 +15,4 @@ git checkout tags/tag-name
 
 第34关过关画面如下：
 
-![第34关 checkout_tag_over_branch](images/level-34-checkout-tag-over-branch.png)
+![第34关 checkout_tag_over_branch](./images/level-34-checkout-tag-over-branch.png)

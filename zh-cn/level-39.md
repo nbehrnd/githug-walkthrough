@@ -17,4 +17,4 @@ git log remote-name/branch-name
 
 第39关过关画面如下：
 
-![第39关 fetch](images/level-39-fetch.png)
+![第39关 fetch](./images/level-39-fetch.png)

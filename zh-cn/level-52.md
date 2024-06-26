@@ -18,4 +18,4 @@ git revert hash-code --no-edit
 
 第52关过关画面如下：
 
-![第52关 revert](images/level-52-revert.png)
+![第52关 revert](./images/level-52-revert.png)

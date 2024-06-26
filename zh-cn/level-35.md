@@ -15,4 +15,4 @@ git branch branch-name hash-code
 
 第35关过关画面如下：
 
-![第35关 branch_at](images/level-35-branch-at.png)
+![第35关 branch_at](./images/level-35-branch-at.png)

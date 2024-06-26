@@ -21,4 +21,4 @@ git merge branch-name --squash
 
 第47关过关画面如下：
 
-![第47关 merge_squash](images/level-47-merge-squash.png)
+![第47关 merge_squash](./images/level-47-merge-squash.png)

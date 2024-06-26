@@ -13,4 +13,4 @@ git clone http://remote.repo.url your-folder
 
 第6关过关画面如下：
 
-![第6关 clone_to_folder](images/level-6-clone-to-folder.png)
+![第6关 clone_to_folder](./images/level-6-clone-to-folder.png)

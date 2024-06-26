@@ -15,4 +15,4 @@ git cherry-pick hash-code
 
 第43关过关画面如下：
 
-![第43关 cherry-pick](images/level-43-cherry-pick.png)
+![第43关 cherry-pick](./images/level-43-cherry-pick.png)

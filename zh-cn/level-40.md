@@ -27,4 +27,4 @@ git rebase master
 
 第40关过关画面如下：
 
-![第40关 rebase](images/level-40-rebase.png)
+![第40关 rebase](./images/level-40-rebase.png)

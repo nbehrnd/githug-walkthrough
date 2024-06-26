@@ -68,4 +68,4 @@ First coommit
 
 第45关过关画面如下：
 
-![第45关 rename_commit](images/level-45-rename-commit.png)
+![第45关 rename_commit](./images/level-45-rename-commit.png)

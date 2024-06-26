@@ -17,4 +17,4 @@ git commit --amend -C HEAD
 
 第19关过关画面如下：
 
-![第19关 commit_amend](images/level-19-commit-amend.png)
+![第19关 commit_amend](./images/level-19-commit-amend.png)

@@ -15,4 +15,4 @@ git commit -m "your message"
 
 第4关过关画面如下：
 
-![第4关 commit](images/level-4-commit.png)
+![第4关 commit](./images/level-4-commit.png)
