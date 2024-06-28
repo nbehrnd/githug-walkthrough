@@ -1,7 +1,10 @@
 
 # Level 41 rebase_onto
 
-> You've created a branch named `readme-update` from `wrong_branch`, done a few commits on it, and suddenly you realize that you shouldn't have created your branch from `wrong_branch`, but rather from `master`. Now you need to migrate the commits you made on `readme-update` to the `master` branch.
+> You've created a branch named `readme-update` from `wrong_branch`, done a few
+commits on it, and suddenly you realize that you shouldn't have created your
+branch from `wrong_branch`, but rather from `master`. Now you need to migrate
+the commits you made on `readme-update` to the `master` branch.
 
 In the command
 

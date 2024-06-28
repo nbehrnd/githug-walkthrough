@@ -1,11 +1,18 @@
 
 # Level 49 bisect
 
-> A bug was introduced somewhere along the way. You know that running `ruby prog.rb 5` should output 15. You can also run `make test`. What are the first 7 chars of the hash of the commit (the abbreviated hash) that introduced the bug?
+> A bug was introduced somewhere along the way. You know that running `ruby
+prog.rb 5` should output 15. You can also run `make test`. What are the first 7
+chars of the hash of the commit (the abbreviated hash) that introduced the bug?
 
-As you iterate through your program, in addition to locate the buggy piece of code, you'll want to identify the commit which introduced the bug. You can use Git's `bisect` utility to test the code by bisection -- just as you would bisect an array element.
+As you iterate through your program, in addition to locate the buggy piece of
+code, you'll want to identify the commit which introduced the bug. You can use
+Git's `bisect` utility to test the code by bisection -- just as you would
+bisect an array element.
 
-Running `make test` tests whether the program executed correctly by executing the command `ruby prog.rb 5`. The ouput is checked to equate to `15` or else to report `make: *** [test] Error 1` if it is not.
+Running `make test` tests whether the program executed correctly by executing
+the command `ruby prog.rb 5`. The ouput is checked to equate to `15` or else to
+report `make: *** [test] Error 1` if it is not.
 
 The commit history consists of 20 commits:
 
@@ -43,9 +50,14 @@ Bisecting: 9 revisions left to test after this (roughly 3 steps)
 [fdbfc0d403e5ac0b2659cbfa2cbb061fcca0dc2a] Another Commit
 ```
 
-Lines 2 and 3 define the scope of the `bisect` lookup with `git bisect good` and `git bisect bad` to indicate commits already known for the program to either pass or fail the test. Out of the initial scope of 20, Git identifies a in the middle (hash of "fdbfc0d403e5a"), i.e. there are 9 more commits or about 3 more binary lookups to consider.
+Lines 2 and 3 define the scope of the `bisect` lookup with `git bisect good`
+and `git bisect bad` to indicate commits already known for the program to
+either pass or fail the test. Out of the initial scope of 20, Git identifies a
+in the middle (hash of "fdbfc0d403e5a"), i.e. there are 9 more commits or about
+3 more binary lookups to consider.
 
-We test the program of this commit; because it passes the test, we provide the feedback `good`:
+We test the program of this commit; because it passes the test, we provide the
+feedback `good`:
 
 ```shell
 $ make test
@@ -55,7 +67,9 @@ Bisecting: 4 revisions left to test after this (roughly 2 steps)
 [18ed2ac1522a014412d4303ce7c8db39becab076] Another Commit
 ``
 
-Git continues with the binary lookup, now leading to commit hash "18ed2ac1522a01". We test the program again which however doesn't pass the test; our feedback reflects this (`bad`):
+Git continues with the binary lookup, now leading to commit hash
+"18ed2ac1522a01". We test the program again which however doesn't pass the
+test; our feedback reflects this (`bad`):
 
 ``
 $ make test
@@ -66,7 +80,8 @@ Bisecting: 2 revisions left to test after this (roughly 1 step)
 [9f54462abbb991b167532929b34118113aa6c52e] Another Commit
 ```
 
-That's it: after a few rounds, when Git reports the following message, it means it's found:
+That's it: after a few rounds, when Git reports the following message, it means
+it's found:
 
 ```
 18ed2ac1522a014412d4303ce7c8db39becab076 is the first bad commit

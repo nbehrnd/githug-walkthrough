@@ -1,7 +1,9 @@
 
 # Level 53 restore
 
-> You decided to delete your latest commit by running `git reset --hard HEAD^` (not a smart thing to do). Now you changed your mind and want that commit back. Restore the deleted commit.
+> You decided to delete your latest commit by running `git reset --hard HEAD^`
+(not a smart thing to do). Now you changed your mind and want that commit back.
+Restore the deleted commit.
 
 Let's start to inspect the commit log; there are 2 commits:
 
@@ -21,15 +23,21 @@ f766953 HEAD@{1}: commit: Restore this commit
 e586f55 HEAD@{3}: commit (initial): Initial commit
 ```
 
-Oh, there was a third commit, but it was removed by `git reset --hard HEAD^` to revert the state of the workspace. Note `HEAD@{2}` and `HEAD@{0}` actually share a hash value.
+Oh, there was a third commit, but it was removed by `git reset --hard HEAD^` to
+revert the state of the workspace. Note `HEAD@{2}` and `HEAD@{0}` actually
+share a hash value.
 
-If we want to undo this command itself, that is, restore to the state before executing this command, we can use the following command form:
+If we want to undo this command itself, that is, restore to the state before
+executing this command, we can use the following command form:
 
 ```shell
 git reset --hard hash-code
 ```
 
-The `hash-code` in the above is the hash of the commit you're reverting to. After running this command, Git adds a commit with the message "Restore this commit" to the commit log, and an other "reset: moving to hash-code" to the operations log.
+The `hash-code` in the above is the hash of the commit you're reverting to.
+After running this command, Git adds a commit with the message "Restore this
+commit" to the commit log, and an other "reset: moving to hash-code" to the
+operations log.
 
 The level 53 pass screen is as follows:
 

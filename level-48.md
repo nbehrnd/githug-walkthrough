@@ -1,9 +1,11 @@
 
 # Level 48 reorder
 
-> You have committed several times but in the wrong order. Please reorder your commits.
+> You have committed several times but in the wrong order. Please reorder your
+commits.
 
-In levels 45 and 46, we used the `git rebase -i` command to change the commit messages in the history log while merging multiple commits into one.
+In levels 45 and 46, we used the `git rebase -i` command to change the commit
+messages in the history log while merging multiple commits into one.
 
 Let's start by checking the commit log:
 
@@ -15,7 +17,9 @@ a5f696b57d524c83b9fbb094b013590e4ff3d43d Third commit
 f0c159847ae93dabc8fd23766b40cf0cc21b315d Initial Setup
 ```
 
-The above query shows that the order of "Second commit" and "Third commit" is reversed. Let's find the hash "f0c159847ae93" of the last log and enter the following command:
+The above query shows that the order of "Second commit" and "Third commit" is
+reversed. Let's find the hash "f0c159847ae93" of the last log and enter the
+following command:
 
 ```shell
 git rebase -i f0c159847ae93
@@ -37,7 +41,8 @@ pick 3baec3b Second commit
 pick a5f696b Third commit
 ```
 
-After save and exit, Git will re-execute the commits in the adjusted sequence. Check the logs again and see that the sequence has been adjusted.
+After save and exit, Git will re-execute the commits in the adjusted sequence.
+Check the logs again and see that the sequence has been adjusted.
 
 ```shell
 $ git log --pretty=oneline
