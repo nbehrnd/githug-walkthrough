@@ -2,7 +2,7 @@
 # Level 14 rename
 
 > We have a file called `oldfile.txt`. We want to rename it to `newfile.txt`
-and stage this change.
+> and stage this change.
 
 In level 11, we used `git rm` to delete a file from the repository. Similarly,
 if you want to rename a file in the repository, instead of using the `mv`

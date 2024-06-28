@@ -2,7 +2,7 @@
 # Level 18 push_tags
 
 > A tag in the local repository isn't pushed into remote repository. Push it
-now.
+> now.
 
 By default, the `git push` command doesn't push a tag. To render them visible
 to anyone else accessing the remote repository, you have to specify that they

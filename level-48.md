@@ -2,7 +2,7 @@
 # Level 48 reorder
 
 > You have committed several times but in the wrong order. Please reorder your
-commits.
+> commits.
 
 In levels 45 and 46, we used the `git rebase -i` command to change the commit
 messages in the history log while merging multiple commits into one.

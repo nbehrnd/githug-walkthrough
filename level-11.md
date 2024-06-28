@@ -2,7 +2,7 @@
 # Level 11 rm
 
 > A file has been removed from the working tree, but not from the repository.
-Identify this file and remove it.
+> Identify this file and remove it.
 
 If a file is useless and you want to delete it, don't use the `rm` command.
 Instead, use the Git-wrapped `git rm` command -- otherwise the Git repository

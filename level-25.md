@@ -2,7 +2,7 @@
 # Level 25 remote_url
 
 > The remote repositories have a url associated to them. Please enter the url
-of remote_location.
+> of remote_location.
 
 As above, you can look up the URLs of remote repositories by adding a `-v`
 parameter to the `git remote` command.

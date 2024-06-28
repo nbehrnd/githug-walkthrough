@@ -2,7 +2,7 @@
 # Level 51 find\_old\_branch
 
 > You have been working on a branch but got distracted by a major issue. Switch
-back to that branch even though you forgot the name of it.
+> back to that branch even though you forgot the name of it.
 
 This happens all the time; the dumb solution is to check-out each branch, to
 read their logs trying to remember what you were working on. On the other hand,

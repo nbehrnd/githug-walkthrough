@@ -2,7 +2,7 @@
 # Level 31 branch
 
 > To work on a piece of code that has the potential to break things, create the
-branch test_code.
+> branch test_code.
 
 The next 10 levels are all about branches.
 

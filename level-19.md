@@ -2,8 +2,8 @@
 # Level 19 commit_amend
 
 > The 'README' file has been committed, but it looks like the file
-'forgotten_file.rb' was missing from the commit. Add the file and amend your
-previous commit to include it.
+> 'forgotten_file.rb' was missing from the commit. Add the file and amend your
+> previous commit to include it.
 
 The solution is to add the forgotten file to the staging area with `git add`
 and then append it to the last commit by `git commit` with the `--amend`

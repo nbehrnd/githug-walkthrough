@@ -2,8 +2,8 @@
 # Level 43 cherry-pick
 
 > Your new feature isn't worth the time and you're going to delete it. But it
-has one commit that fills in the `README` file, and you want this commit to be
-on the master as well.
+> has one commit that fills in the `README` file, and you want this commit to be
+> on the master as well.
 
 After multiple commits in a feature branch, you might not want to merge all
 commits into the mainline. If you want to commit only one specific commit into

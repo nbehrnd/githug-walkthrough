@@ -2,7 +2,7 @@
 # Level 34 checkout_tag_over_branch
 
 > You need to fix a bug in the version 1.2 of your app. Checkout the tag `v1.2`
-(Note: There is also a branch named `v1.2`).
+> (Note: There is also a branch named `v1.2`).
 
 If there is a tag with the same name as the branch, say `v1.2`, should Git
 switch to the branch or the tag when issuing the command `git checkout v1.2`

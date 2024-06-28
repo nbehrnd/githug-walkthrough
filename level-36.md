@@ -2,7 +2,7 @@
 # Level 36 delete_branch
 
 > You have created too many branches for your project. There is an old branch
-in your repo called 'delete_me', you should delete it.
+> in your repo called 'delete_me', you should delete it.
 
 The command to delete a branch is as follows:
 

@@ -54,9 +54,9 @@ future action on this update:
 * "pick", to perform this commit;
 * "reword", to execute this commit with an edited commit message;
 * "edit", to modify this commit, such as appending the file again or modifying
-it;
+  it;
 * "squash", to merge the content of this commit into the last commit, and the
-content of the remarks into the last commit;
+  content of the remarks into the last commit;
 * "fixup", is similar to "squash", but discards the contents of this commit;
 * "exec", executes a command from the command line;
 * "drop", to delete this commit.
@@ -85,4 +85,4 @@ changed.
 
 The level 45 pass screen is as follows:
 
-![Level 45 rename_com
+![Level 45 rename_com](level-45-rename-commit.png)

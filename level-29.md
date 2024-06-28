@@ -2,7 +2,7 @@
 # Level 29 diff
 
 > Since your last commit, file `app.rb` was modified. Find out which line has
-changed.
+> changed.
 
 If a file in the repository has been edited, its status changes to `modified`.
 You can use the following command to see the details of what has been changed:

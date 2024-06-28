@@ -2,8 +2,8 @@
 # Level 50 stage_lines
 
 > You've made changes within a single file that belong to two different
-features, but neither of the changes are yet staged. Stage only the changes
-belonging to the first feature.
+> features, but neither of the changes are yet staged. Stage only the changes
+> belonging to the first feature.
 
 You can add files to the staging area by `git add`. However if you don't want
 to add all edits of a file into the staging area, or if you only want to commit

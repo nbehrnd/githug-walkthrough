@@ -2,7 +2,7 @@
 # Level 46 squash
 
 > You have committed several times but would like all those changes to be one
-commit.
+> commit.
 
 Following up on the previous level, to merge multiple commits into one you can
 use the command `git rebase -i` with the option `squash`.

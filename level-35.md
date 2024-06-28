@@ -2,7 +2,7 @@
 # Level 35 branch_at
 
 > You forgot to branch at the previous commit and made a commit on top of it.
-Create the branch test_branch at the commit before the last.
+> Create the branch test_branch at the commit before the last.
 
 By default, when you create a branch with the `git branch branch-name`
 statement, the branch you create is the same as the current mainline. However,

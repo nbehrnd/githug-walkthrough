@@ -2,7 +2,7 @@
 # Level 23 checkout_file
 
 > A file has been modified, but you don't want to keep the modification.
-Checkout the `config.rb` file from the last commit.
+> Checkout the `config.rb` file from the last commit.
 
 This is still an undo operation. Use this command if you want to abandon what
 has been modified in your working directory:

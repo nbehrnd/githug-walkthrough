@@ -2,8 +2,8 @@
 # Level 37 push_branch
 
 > You've made some changes to a local branch and want to share it, but aren't
-yet ready to merge it with the 'master' branch. Push only 'test_branch' to the
-remote repository
+> yet ready to merge it with the 'master' branch. Push only 'test_branch' to the
+> remote repository
 
 We learned about the push command in level 28 with the following syntax:
 

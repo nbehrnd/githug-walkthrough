@@ -2,8 +2,8 @@
 # Level 53 restore
 
 > You decided to delete your latest commit by running `git reset --hard HEAD^`
-(not a smart thing to do). Now you changed your mind and want that commit back.
-Restore the deleted commit.
+> (not a smart thing to do). Now you changed your mind and want that commit
+> back. Restore the deleted commit.
 
 Let's start to inspect the commit log; there are 2 commits:
 

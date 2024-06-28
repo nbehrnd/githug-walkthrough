@@ -2,7 +2,7 @@
 # Level 42 repack
 
 > Optimise how your repository is packaged ensuring that redundant packs are
-removed.
+> removed.
 
 As we mentioned in level 1, when a Git project is initialized, Git creates a
 hidden subdirectory `.git` with files to manage the repository. In the Git

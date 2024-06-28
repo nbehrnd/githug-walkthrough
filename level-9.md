@@ -20,15 +20,13 @@ provides the information in a compact format. The default detailed format
 contains the following:
 
 * untracked: Files that are newly created in the repository, or copied into the
-repository from somewhere else, have a status of "untracked", and they are
-displayed in red in the "Untracked files" paragraph of the query result.
-
+  repository from somewhere else, have a status of "untracked", and they are
+  displayed in red in the "Untracked files" paragraph of the query result.
 * modified: Files that have been edited have a status of "modified" and are
-shown in red in the "Changes not staged for commit" section of the query.
-
+  shown in red in the "Changes not staged for commit" section of the query.
 * staged: Files added to the staging area by the `git add` command become
-"staged" and are displayed in green in the "Changes to be committed" section of
-the query.
+  "staged" and are displayed in green in the "Changes to be committed" section of
+  the query.
 
 If you're confused by the statuses above, go back to level 3 and take a closer
 look at the "Git File Lifecycle" diagram.

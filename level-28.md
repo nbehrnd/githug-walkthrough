@@ -2,7 +2,7 @@
 # Level 28 push
 
 > Your local master branch has diverged from the remote origin/master branch.
-Rebase your branch onto origin/master and push it to remote.
+> Rebase your branch onto origin/master and push it to remote.
 
 When you're developing with partners, you both clone your files locally from
 the remote repository, then split your development, and then push to the remote

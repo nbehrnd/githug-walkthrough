@@ -2,7 +2,7 @@
 # Level 52 revert
 
 > You have committed several times but want to undo the middle commit. All
-commits have been pushed, so you can't change existing history.
+> commits have been pushed, so you can't change existing history.
 
 We've used the `git rebase -i` command to change the history of commits to
 cancel one of the multiple commits. But that's only if it hasn't been pushed to

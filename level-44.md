@@ -2,7 +2,7 @@
 # Level 44 grep
 
 > Your project's deadline approaches, you should evaluate how many TODOs are
-left in your code.
+> left in your code.
 
 Similar to Linux's `grep` command, Git provides a `grep` command for a search
 in the source code:

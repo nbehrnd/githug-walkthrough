@@ -2,7 +2,7 @@
 # Level 39 fetch
 
 > Looks like a new branch was pushed into our remote repository. Get the
-changes without merging them with the local repository.
+> changes without merging them with the local repository.
 
 In level 26 we used `git pull` to pull updates from a remote repository into
 the local repository. This command actually implies two consecutive actions,

@@ -2,7 +2,7 @@
 # Level 40 rebase
 
 > We are using a git rebase workflow and the feature branch is ready to go into
-master. Let's rebase the feature branch onto our master branch.
+> master. Let's rebase the feature branch onto our master branch.
 
 We used the `git rebase` command once in level 28, so let's go over it again.
 

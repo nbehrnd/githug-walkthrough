@@ -2,8 +2,8 @@
 # Level 54 conflict
 
 > You need to merge mybranch into the current branch (master). But there may be
-some incorrect changes in mybranch which may cause conflicts. Solve any
-merge-conflicts you come across and finish the merge.
+> some incorrect changes in mybranch which may cause conflicts. Solve any
+> merge-conflicts you come across and finish the merge.
 
 We learned about the `git merge` command in level 38. But it's not uncommon to
 have merge conflicts in the course of your work. A conflict occurs when both

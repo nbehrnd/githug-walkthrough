@@ -2,7 +2,7 @@
 # Level 13 stash
 
 > You've made some changes and want to work on them later. You should save
-them, but don't commit them.
+> them, but don't commit them.
 
 Imagine a scenario where you are writing a new method for a class. You are
 halfway through, when an urgent task comes up that requires you to modify

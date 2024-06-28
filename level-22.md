@@ -2,7 +2,7 @@
 # Level 22 reset_soft
 
 > You committed too soon. Now you want to undo the last commit, while keeping
-the index.
+> the index.
 
 This is another undo operation to undo the last `git commit` command with the
 following syntax:

@@ -2,8 +2,8 @@
 # Level 21 reset
 
 > There are two files to be committed. The goal was to add each file as a
-separate commit, however both were added by accident. Unstage the file
-`to_commit_second.rb` using the reset command (don't commit anything).
+> separate commit, however both were added by accident. Unstage the file
+> `to_commit_second.rb` using the reset command (don't commit anything).
 
 This level is very similar to level 12 in that it's all about removing files
 from the staging area. You can even use the `git rm --cached` command from

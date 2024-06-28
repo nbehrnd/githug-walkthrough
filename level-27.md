@@ -1,8 +1,7 @@
 
 # Level 27 remote_add
 
-> Add a remote repository called `origin` with the url
-https://github.com/githug/githug
+> Add a remote repository called `origin` with the url https://github.com/githug/githug
 
 In level 25, we listed multiple remote repositories with `git remote -v`. But
 how were they added?

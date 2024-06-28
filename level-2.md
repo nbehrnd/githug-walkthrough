@@ -2,7 +2,7 @@
 # Level 2 config
 
 > Set up your git name and email, this is important so that your commits can be
-identified.
+> identified.
 
 The first thing to do after your repository has been initialized is to set up
 your username and email address. This information is used for every subsequent

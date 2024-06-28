@@ -1,9 +1,10 @@
 
 # Level 49 bisect
 
-> A bug was introduced somewhere along the way. You know that running `ruby
-prog.rb 5` should output 15. You can also run `make test`. What are the first 7
-chars of the hash of the commit (the abbreviated hash) that introduced the bug?
+> A bug was introduced somewhere along the way. You know that running
+> `ruby prog.rb 5` should output 15. You can also run `make test`. What are the
+> first 7 chars of the hash of the commit (the abbreviated hash) that introduced
+> the bug?
 
 As you iterate through your program, in addition to locate the buggy piece of
 code, you'll want to identify the commit which introduced the bug. You can use
