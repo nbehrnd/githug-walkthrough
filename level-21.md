@@ -1,20 +1,20 @@
 
 # Level 21 reset
 
-> The goal was to add each file as a separate commit, however both were added by accident. Unstage the file 'to_commit_ second.rb' using the reset command (don't commit anything). second.rb' using the reset command (don't commit anything).
-> 
-> There are already 2 files about to be committed (i.e. added to the staging area), but in order to commit each file separately, the file 'to_commit_second.rb' needs to be removed from the staging area using the reset command (don't commit anything).
+> There are two files to be committed. The goal was to add each file as a separate commit, however both were added by accident. Unstage the file `to_commit_second.rb` using the reset command (don't commit anything).
 
-This level is very similar to level 12, in that it's all about removing files from the staging area, and you can even use the `git rm --cached` command from level 12 to accomplish this task, but if you can do it with what you already know, why do you need to set up a special level for this?
+This level is very similar to level 12 in that it's all about removing files from the staging area. You can even use the `git rm --cached` command from level 12 to accomplish this task, but if you can do it with what you already know, why do you need to set up a special level for this?
 
-Recall the "Git File Lifecycle" diagram from level 3 (it's a really important diagram, and we recalled it once in level 9). A file in your working directory can have two states: untracked, which means it's a new file that didn't exist in the repository before, or modified, which means it's a file that already exists in the repository and has been modified. No matter which state they are in, the command to add them to the staging area is `commit add`, but this command actually contains two possible meanings: adding a file to the repository, or modifying an existing file in the repository, and the operation of removing a file from the staging area corresponds to two scenarios, one is to remove the new file from the staging area, and the other is to remove the modified file from the staging area. One is to move new files out of the staging area, and the other is to move modified files out of the staging area. Level 12 and this level are designed to examine these two scenarios, with Level 12 focusing on the first scenario and this level on the second.
+Recall the "Git File Lifecycle" diagram from level 3 (it's a really important diagram, and we recalled it once in level 9). A file in your working directory can have two states: `untracked`, which means it's a new file that didn't exist in the repository before, or `modified`, which means it's a file that already exists in the repository and has been modified.
+
+No matter which state they are in, the command to add them to the staging area is `commit add`, but this command actually contains two possible meanings: adding a file to the repository, or modifying an existing file in the repository.  Hence, the operation of removing a file from the staging area corresponds to two scenarios, one is to remove the *new file* from the staging area, and the other is to remove the *modified file* from the staging area. Level 12 and this level are designed to examine these two scenarios, with Level 12 focusing on the first scenario and this level on the second.
 
 The command to remove a modified file from the staging area is:
 
-```
-$ git reset your-file
+```shell
+git reset your-file
 ```
 
 The pass screen for level 21 is as follows:
 
-! [level-21 reset](images/level-21-reset.png)
+![level-21 reset](images/level-21-reset.png)

@@ -1,22 +1,20 @@
 
 # Level 9 status
 
-> There are some files in this repository, one of the files is untracked, which file is it?
-> 
-> There are some files in this repository, one of the files is untracked, which file is it?
+> Among the files in this repository, which of them is untracked?
 
-Git manages files in a variety of states, and you often need to check the state of a file before deciding what to do or how to do it next, so it's as important as the Linux `ls` command, which is the starting point for almost all operations.
+Git manages files in a variety of states. You often need to check the state of a file before deciding what to do or how to do it next. Hence it's as important as the Linux `ls` command, which is the starting point for almost all operations.
 
 The command to check the status of a repository is:
 
-```
-$ git status
-$ git status -s
+```shell
+git status
+git status -s
 ```
 
-The first command indicates viewing in detailed format and the second command indicates viewing in compact format. The default detailed format contains the following:
+The first command indicates viewing in detailed format while the second command provides the information in a compact format. The default detailed format contains the following:
 
-* untracked: Files that are newly created in the repository, or copied into the repository from somewhere else, have a status of "untracked", and they are displayed in red in the "Untrakced files" paragraph of the query result.
+* untracked: Files that are newly created in the repository, or copied into the repository from somewhere else, have a status of "untracked", and they are displayed in red in the "Untracked files" paragraph of the query result.
 
 * modified: Files that have been edited have a status of "modified" and are shown in red in the "Changes not staged for commit" section of the query.
 
@@ -28,4 +26,4 @@ Levels 9 and 10 test your ability to read the results of a git status query, wit
 
 The screen for level 9 looks like this:
 
-! [level-9 status](images/level-9-status.png)
+![level-9 status](images/level-9-status.png)

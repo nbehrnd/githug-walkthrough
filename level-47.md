@@ -2,23 +2,21 @@
 # Level 47 merge_squash
 
 > Merge all commits from the long-featured-branch as a single commit.
-> 
-> Merge the branch named long-feature-branch into the trunk by merging multiple commits from the branch into a single commit on the trunk.
 
-In level 38 we had learned about ``merge`` merge, which has the syntax:
+In level 38 we had learned about a merge by `merge` with the syntax:
 
-```
-$ git merge branch-name
+```shell
+git merge branch-name
 ```
 
-If the branch has been committed multiple times, then after merging with the above statement, the logs of the trunk will also show multiple commits. To conform to this level, merge multiple commits on a branch into a single commit on the trunk, add a ```squash``` parameter, as follows:
+If a feature branch contains multiple commits, the logs of the trunk will equally show multiple commits after a merge with the above statement because Git implicitly launches a `commit` after the merge. The `squash`option, i.e.
 
-```
-$ git merge branch-name --squash
+```shell
+git merge branch-name --squash
 ```
 
-Without the ```squash``` parameter, the system will silently do a ```commit``` after the merge, and with the ```squash``` parameter, it will not automatically ```commit```, and you will need to manually execute the ```commit``` command with a commit note.
+prevents such an automatic `commit` and indeed, the commiter is required to issue an explicit `commit` (with an optional commit message).
 
 The level 47 pass screen is as follows:
 
-! [level-47 merge_squash](images/level-47-merge-squash.png)
+![level-47 merge_squash](images/level-47-merge-squash.png)

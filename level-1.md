@@ -1,9 +1,7 @@
 
 # Level 1 init
 
-> A new directory, 'git_hug', has been created; initialize an empty repository in it.
->
-> Turn the new directory, 'git_hug', into a repository that can be managed by Git.
+> A new directory, `git_hug`, has been created; initialize an empty repository in it.
 
 If you're going to make a local directory manageable by Git, you need to
 initialize it first. A local directory can be empty, or it can be a directory
@@ -21,4 +19,4 @@ viewed with `ls -a`.
 
 git is a hidden directory that can be viewed with `ls -a`.
 
-[level-1 init](images/level-1-init.png)
+![level-1 init](images/level-1-init.png)

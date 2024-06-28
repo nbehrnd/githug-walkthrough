@@ -1,18 +1,16 @@
 
 # Level 30 blame
 
-> Someone has put a password inside the file 'config.rb' find out who it was.
-> 
-> Someone has put a password inside the file 'config.rb' find out who it was.
+> Identify who put a password inside the file `config.rb`.
 
-When a bug or vulnerability is exposed and you want to find out where it came from, you first need to locate the code, and then you need to locate who introduced the bug; Git keeps detailed update logs, so you can locate the developer with a special command provided by Git:
+When a bug or vulnerability is exposed you need to locate the code and want to identify the origin of the particular section. For each line of the code, Git can report its author by the special command
 
-``
-$ git blame your-file
+```shell
+git blame your-file
 ```
 
-In the result all the code of the specified file will be listed, and to the left of each line of code will be listed its HASH value, developer and time when it was last updated. With this information you can analyze who edited each line of code.
+The listing reports the line of code altogether with the commit hash, the time of the commit, and the author's name.
 
 The level 30 pass screen is as follows:
 
-! [level 30 blame](images/level-30-blame.png)
+![level 30 blame](images/level-30-blame.png)
