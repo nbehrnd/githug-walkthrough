@@ -1,3 +1,4 @@
+
 # Githug 通关攻略
 
 ![封面](../cover/cover.jpg)
@@ -16,6 +17,6 @@ Githug 是一个学习 Git 的游戏，让你在游戏中轻松学习和理解 G
 
 ![图书地址二维码](../images/qrcode.png)
 
-### License
+## License
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/).

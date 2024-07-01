@@ -5,7 +5,7 @@
 >
 > 你提交过几次，但是现在想把这些提交合并成一次提交。
 
-承上关，如果要把多次合并合并成一次提交，可以用 ```git rebase -i``` 的 ```squash``` 命令。
+承上关，如果要把多次合并合并成一次提交，可以用 `git rebase -i` 的 `squash` 命令。
 
 先查一下提交日志：
 
@@ -20,7 +20,7 @@ $ git log --pretty=oneline
 
 从查询结果看出，添加了 README 之后来又对它做了3次修改。
 
-找到 "Adding README" 下面一条日志的哈希值 "994f2b3a2df48ef4a4"，执行 ```reabse``` 命令：
+找到 "Adding README" 下面一条日志的哈希值 "994f2b3a2df48ef4a4"，执行 `reabse` 命令：
 
 ```shell
 git rebase -i 994f2b3a2df48ef4a4

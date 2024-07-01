@@ -21,7 +21,7 @@ $ git log --pretty=oneline
 411bf644d492f6106acda662612dbc627f951769 THIS IS THE COMMIT YOU ARE LOOKING FOR!
 ```
 
-第2条语句增加了 ```---pretty=oneline``` 参数，表示把日志以紧凑的格式显示，每行显示一次提交，只列出提交的 hash 值和说明，便于快速查看多条日志。
+第2条语句增加了 `---pretty=oneline` 参数，表示把日志以紧凑的格式显示，每行显示一次提交，只列出提交的 hash 值和说明，便于快速查看多条日志。
 
 第16关过关画面如下：
 
