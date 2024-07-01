@@ -1,6 +1,6 @@
 # Githug 通关攻略
 
-![封面](cover/cover.jpg)
+![封面](../cover/cover.jpg)
 
 Githug 是一个学习 Git 的游戏，让你在游戏中轻松学习和理解 Git 的强大功能，本书详细讲解了每一关任务产生的背景、解决问题的思路和方法，并提供了清晰的过关画面。
 
@@ -14,7 +14,7 @@ Githug 是一个学习 Git 的游戏，让你在游戏中轻松学习和理解 G
 
 移动端请扫码阅读：
 
-![图书地址二维码](images/qrcode.png)
+![图书地址二维码](../images/qrcode.png)
 
 ### License
 
