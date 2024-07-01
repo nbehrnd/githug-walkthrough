@@ -16,4 +16,4 @@ git grep keyword file-name
 
 第44关过关画面如下：
 
-![第44关 grep](./images/level-44-grep.png)
+![第44关 grep](../images/level-44-grep.png)

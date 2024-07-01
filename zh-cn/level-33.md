@@ -15,4 +15,4 @@ git checkout tag-name
 
 第33关过关画面如下：
 
-![第33关 checkout_tag](./images/level-33-checkout-tag.png)
+![第33关 checkout_tag](../images/level-33-checkout-tag.png)

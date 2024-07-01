@@ -22,4 +22,4 @@ foo.txt
 
 第7关过关画面如下：
 
-![第7关 ignore](./images/level-7-ignore.png)
+![第7关 ignore](../images/level-7-ignore.png)

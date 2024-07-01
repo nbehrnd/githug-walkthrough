@@ -22,4 +22,4 @@ $ git reflog
 
 第51关过关画面如下：
 
-![第51关 find_old_branch](./images/level-51-find-old-branch.png)
+![第51关 find_old_branch](../images/level-51-find-old-branch.png)

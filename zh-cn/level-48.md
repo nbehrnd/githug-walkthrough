@@ -51,4 +51,4 @@ f0c159847ae93dabc8fd23766b40cf0cc21b315d Initial Setup
 
 第48关过关画面如下：
 
-![第48关 reorder](./images/level-48-reorder.png)
+![第48关 reorder](../images/level-48-reorder.png)

@@ -74,4 +74,4 @@ $ git log --pretty=oneline
 
 第46关过关画面如下：
 
-![第46关 squash](./images/level-46-squash.png)
+![第46关 squash](../images/level-46-squash.png)

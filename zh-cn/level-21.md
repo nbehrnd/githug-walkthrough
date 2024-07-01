@@ -17,4 +17,4 @@ git reset your-file
 
 第21关过关画面如下：
 
-![第21关 reset](./images/level-21-reset.png)
+![第21关 reset](../images/level-21-reset.png)

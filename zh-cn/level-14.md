@@ -9,4 +9,4 @@
 
 第14关过关画面如下：
 
-![第14关 rename](./images/level-14-rename.png)
+![第14关 rename](../images/level-14-rename.png)

@@ -15,4 +15,4 @@ git remote -v
 
 第25关过关画面如下：
 
-![第25关 remote_url](./images/level-25-remote-url.png)
+![第25关 remote_url](../images/level-25-remote-url.png)

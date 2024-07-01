@@ -31,4 +31,4 @@ git conifg --add user.name your-name
 
 掌握了以上读写配置信息的方法，再知道了用户名和电子邮件地址的键值分别是 user.name 和 user.email，完成这关的任务就很简单了：
 
-![第2关 config](./images/level-2-config.png)
+![第2关 config](../images/level-2-config.png)

@@ -15,4 +15,4 @@ git remote add remote-name remote-url
 
 第27关过关画面如下：
 
-![第27关 remote_add](./images/level-27-remote-add.png)
+![第27关 remote_add](../images/level-27-remote-add.png)

@@ -19,4 +19,4 @@ git reset --soft HEAD^
 
 第22关过关画面如下：
 
-![第22关 reset_soft](./images/level-22-reset-soft.png)
+![第22关 reset_soft](../images/level-22-reset-soft.png)

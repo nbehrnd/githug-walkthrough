@@ -9,4 +9,4 @@
 
 第11关过关画面如下：
 
-![第11关 rm](./images/level-11-rm.png)
+![第11关 rm](../images/level-11-rm.png)

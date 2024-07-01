@@ -21,4 +21,4 @@ git commit --date="last friday"
 
 第20关过关画面如下：
 
-![第20关 commit_in_future](./images/level-20-commit-in-future.png)
+![第20关 commit_in_future](../images/level-20-commit-in-future.png)

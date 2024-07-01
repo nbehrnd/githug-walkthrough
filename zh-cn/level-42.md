@@ -31,4 +31,4 @@ pack-b7b37f445a40715c249bf8c0df9631e9fd6c8f4b.pack
 
 第42关过关画面如下：
 
-![第42关 repack](./images/level-42-repack.png)
+![第42关 repack](../images/level-42-repack.png)

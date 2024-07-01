@@ -17,4 +17,4 @@ git push --tags
 
 第18关过关画面如下：
 
-![第18关 push_tags](./images/level-18-push-tags.png)
+![第18关 push_tags](../images/level-18-push-tags.png)

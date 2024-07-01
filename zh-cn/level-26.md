@@ -15,4 +15,4 @@ git pull remote-name branch-name
 
 第26关过关画面如下：
 
-![第26关 pull](./images/level-26-pull.png)
+![第26关 pull](../images/level-26-pull.png)

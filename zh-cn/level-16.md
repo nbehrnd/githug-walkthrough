@@ -25,4 +25,4 @@ $ git log --pretty=oneline
 
 第16关过关画面如下：
 
-![第16关 log](./images/level-16-log.png)
+![第16关 log](../images/level-16-log.png)

@@ -15,4 +15,4 @@ git clone http://remote.repo.url
 
 第5关过关画面如下：
 
-![第5关 clone](./images/level-5-clone.png)
+![第5关 clone](../images/level-5-clone.png)

@@ -28,4 +28,4 @@ git status -s
 
 第9关过关画面如下：
 
-![第9关 status](./images/level-9-status.png)
+![第9关 status](../images/level-9-status.png)

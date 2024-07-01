@@ -9,4 +9,4 @@
 
 第10关过关画面如下：
 
-![第10关 number_of_files_committed](./images/level-10-number-of-files-committed.png)
+![第10关 number_of_files_committed](../images/level-10-number-of-files-committed.png)

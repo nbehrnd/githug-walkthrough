@@ -35,4 +35,4 @@ git reset --hard hash-code
 
 第53关过关画面如下：
 
-![第53关 restore](./images/level-53-restore.png)
+![第53关 restore](../images/level-53-restore.png)

@@ -9,4 +9,4 @@
 
 第41关过关画面如下：
 
-![第41关 rebase_onto](./images/level-41-rebase-onto.png)
+![第41关 rebase_onto](../images/level-41-rebase-onto.png)

@@ -35,4 +35,4 @@ Had a great fall
 
 第54关过关画面如下：
 
-![第54关 conflict](./images/level-54-conflict.png)
+![第54关 conflict](../images/level-54-conflict.png)

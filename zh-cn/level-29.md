@@ -50,4 +50,4 @@ a9
 
 第29关过关画面如下：
 
-![第29关 diff](./images/level-29-diff.png)
+![第29关 diff](../images/level-29-diff.png)

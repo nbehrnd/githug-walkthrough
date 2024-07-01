@@ -15,4 +15,4 @@ git rm --cached your-file
 
 第12关过关画面如下：
 
-![第12关 rm_cached](./images/level-12-rm-cached.png)
+![第12关 rm_cached](../images/level-12-rm-cached.png)

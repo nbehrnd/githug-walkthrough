@@ -101,4 +101,4 @@ f608824888b83b First commit
 
 第49关过关画面如下：
 
-![第49关 bisect](./images/level-49-bisect.png)
+![第49关 bisect](../images/level-49-bisect.png)
