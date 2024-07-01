@@ -1,33 +1,48 @@
-# 第2关 config
 
-> Set up your git name and email, this is important so that your commits can be identified.
-> 
-> 设置你的用户名和电子邮件地址。
+# Level 2 config
 
-仓库初始化之后要做的第一件事就是设置你的用户名称和电子邮件地址，以后每一次 Git 提交都会使用这些信息，用于记录代码是谁提交的。
+> Set up your git name and email, this is important so that your commits can be
+> identified.
 
-配置信息分为全局配置和本地配置（即当前仓库的配置），使用 `git config` 命令维护，读写全局配置用 `--global` 参数，读写本地配置用 `--local` 参数。（注：还有一层系统配置，但用得少，此处不议。）
+The first thing to do after your repository has been initialized is to set up
+your username and email address. This information is used for every subsequent
+Git commit, and is used to keep track of who committed the code.
 
-查看指定的配置信息用 `--get` 参数，如：
+Git's configuration information is divided into global and local (i.e., the
+current repository's configuration). It is maintained using the `git config`
+command, with the `--global` parameter for reading and writing the global
+configuration, and the `--local` parameter for reading and writing the local
+configuration. (Note: There is also a layer of system configuration, but it is
+rarely used and is not discussed here.)
 
-```
-$ git config --get --local user.name
-$ git config --get --global user.name
-$ git config --get user.name
-```
+To view the specified configuration information use the `--get` parameter, e.g.:
 
-第1条命令是查看本地配置的用户名，第2条命令是查看全局配置的用户名，第3条命令是查看优先级最高的用户名，如果有本地配置项，就读取本地配置项，如果没有本地配置项，就读取全局配置项。
-
-增加配置信息用 `--add` 参数，如：
-
-```
-$ git config --add --local user.name your-name
-$ git config --add --global user.name your-name
-$ git conifg --add user.name your-name
+```shell
+git config --get --local user.name
+git config --get --global user.name
+git config --get user.name
 ```
 
-第1条命令是在本地配置中增加用户名，第2条命令是在全局配置中增加用户名，第3条命令和第1条命令相同，也是在本地配置中增加用户名。
+The first command looks at the locally configured user name. The second command
+looks at the globally configured user name. The third command looks at the
+highest-priority user name, and reads the local configuration entry if there is
+one, or the global configuration entry if there is no local configuration entry.
 
-掌握了以上读写配置信息的方法，再知道了用户名和电子邮件地址的键值分别是 user.name 和 user.email，完成这关的任务就很简单了：
+Add configuration information with the `--add` parameter, for example:
 
-![第2关 config](images/level-2-config.png)
+```shell
+git config --add --local user.name your-name
+git config --add --global user.name your-name
+git config --add user.name your-name
+```
+
+The first command adds the user name to the local configuration, the second
+command adds this at global level. The third command adds the user name to both
+local and global configuration.
+
+Having mastered the above methods of reading and writing configuration
+information, and knowing that the keys for the username and email address are
+`user.name` and `user.email`, respectively, completing this level is a simple
+task:
+
+![level 2 config](images/level-2-config.png)

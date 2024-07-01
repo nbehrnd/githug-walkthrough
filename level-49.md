@@ -1,16 +1,23 @@
-# 第49关 bisect
 
-> A bug was introduced somewhere along the way.  You know that running "ruby prog.rb 5" should output 15.  You can also run "make test".  What are the first 7 chars of the hash of the commit that introduced the bug.
-> 
-> 在开发过程中引入了一个 bug。已知运行 "ruby prog.rb 5" 应该输入 15，你也可以运行 "make test" 进行测试。你需要确定引入 bug 的那次提交的哈希值的前7位。
+# Level 49 bisect
 
-在程序持续迭代的过程中不免会引入 bug，除了定位 bug 的代码片断，我们还想知道 bug 是在什么时间被引入的，这时就可以借助 Git 提供的 `bisect` 工具来查找是哪次提交引入了 bug。`bisect` 是用二分法来查找的，就像用二分查找法查找数组元素那样。
+> A bug was introduced somewhere along the way. You know that running
+> `ruby prog.rb 5` should output 15. You can also run `make test`. What are the
+> first 7 chars of the hash of the commit (the abbreviated hash) that introduced
+> the bug?
 
-运行 `make test` 可以测试程序是否正确执行，它会先执行 "ruby prog.rb 5" 语句，然后再分析输出结果是否等于15，如果不等于15，就会显示 `make: *** [test] Error 1`。
+As you iterate through your program, in addition to locate the buggy piece of
+code, you'll want to identify the commit which introduced the bug. You can use
+Git's `bisect` utility to test the code by bisection -- just as you would
+bisect an array element.
 
-我们先看一下提交历史，一共20次提交：
+Running `make test` tests whether the program executed correctly by executing
+the command `ruby prog.rb 5`. The ouput is checked to equate to `15` or else to
+report `make: *** [test] Error 1` if it is not.
 
-```
+The commit history consists of 20 commits:
+
+```shell
 $ git log --pretty=oneline
 12628f463f4c722695bf0e9d603c9411287885db Another Commit
 979576184c5ec9667cf7593cf550c420378e960f Another Commit
@@ -34,7 +41,7 @@ e060c0d789288fda946f91254672295230b2de9d Another Commit
 f608824888b83bbedc1f658be7496ffea467a8fb First commit
 ```
 
-首先启动 `bisect` 查找流程：
+First start the `bisect` lookup process:
 
 ```
 $ git bisect start
@@ -44,21 +51,28 @@ Bisecting: 9 revisions left to test after this (roughly 3 steps)
 [fdbfc0d403e5ac0b2659cbfa2cbb061fcca0dc2a] Another Commit
 ```
 
-第2行和第3行是定义 `bisect` 的查找范围，`git bisect good` 和 `git bisect bad` 表示当前程序通过或没有通过测试，在第2行后面以第一次提交的哈希值为参数，在第3行后面以最后一次提交的哈希值为参数，说明查找范围是全部20次提交。接着 Git 定位了位于中间那个提交，它的哈希值是 "fdbfc0d403e5a"，并计算出剩余的提交还有9次，大约还需要3次二分查找。
+Lines 2 and 3 define the scope of the `bisect` lookup with `git bisect good`
+and `git bisect bad` to indicate commits already known for the program to
+either pass or fail the test. Out of the initial scope of 20, Git identifies a
+in the middle (hash of "fdbfc0d403e5a"), i.e. there are 9 more commits or about
+3 more binary lookups to consider.
 
-这时，我们对程序进行测试，测试通过，所以我们反馈 `good`：
+We test the program of this commit; because it passes the test, we provide the
+feedback `good`:
 
-```
+```shell
 $ make test
 ruby prog.rb 5 | ruby test.rb
 $ git bisect good
 Bisecting: 4 revisions left to test after this (roughly 2 steps)
 [18ed2ac1522a014412d4303ce7c8db39becab076] Another Commit
-```
+``
 
-Git 继续进行二分查找，这次定位的哈希值是 "18ed2ac1522a01"，我们再对程序测试，测试没有通过，所以我们反馈 `bad`：
+Git continues with the binary lookup, now leading to commit hash
+"18ed2ac1522a01". We test the program again which however doesn't pass the
+test; our feedback reflects this (`bad`):
 
-```
+``
 $ make test
 ruby prog.rb 5 | ruby test.rb
 make: *** [test] Error 1
@@ -67,13 +81,14 @@ Bisecting: 2 revisions left to test after this (roughly 1 step)
 [9f54462abbb991b167532929b34118113aa6c52e] Another Commit
 ```
 
-就这样，经过几轮测试，当 Git 给出下面的消息时，表示找到了：
+That's it: after a few rounds, when Git reports the following message, it means
+it's found:
 
 ```
 18ed2ac1522a014412d4303ce7c8db39becab076 is the first bad commit
 ```
 
-下面是对查找过程的回顾：
+Here is a review of the find process:
 
 ```
 12628f463f4c72 Another Commit
@@ -81,12 +96,12 @@ Bisecting: 2 revisions left to test after this (roughly 1 step)
 028763b396121e Another Commit
 888386c77c957d Another Commit
 bb736ddd9b83d6 Another Commit
-18ed2ac1522a01 Another Commit 第2次 bad
-5db7a7cb90e745 Another Commit 第4次 good
+18ed2ac1522a01 Another Commit 2nd bad
+5db7a7cb90e745 Another Commit 4th good
 7c03a99ba38457 Another Commit
-9f54462abbb991 Another Commit 第3次 good
+9f54462abbb991 Another Commit 3rd good
 5d1eb75377072c Another Commit
-fdbfc0d403e5ac Another Commit 第1次 good
+fdbfc0d403e5ac Another Commit 1st good
 a530e7ed25173d Another Commit
 ccddb96f824a0e Another Commit
 2e1735d5bef6db Another Commit
@@ -98,6 +113,6 @@ e060c0d789288f Another Commit
 f608824888b83b First commit
 ```
 
-第49关过关画面如下：
+The level 49 pass screen is as follows:
 
-![第49关 bisect](images/level-49-bisect.png)
+![Level 49 bisect](images/level-49-bisect.png)

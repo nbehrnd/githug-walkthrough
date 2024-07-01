@@ -1,23 +1,31 @@
-# 第20关 commit_in_future
+
+# Level 20 commit_in_future
 
 > Commit your changes with the future date (e.g. tomorrow).
-> 
-> 把提交日期设定在未来的某一天（比如明天）。
 
-这关的任务很奇怪，要求把提交时间设定在未来，可是 Git 这台时光机只能开往过去不能开往未来，它只负责把发生过的事管理好，所以把提交时间设定在未来某个时间点实在没有道理啊！如果本关是想考核对 `git commit` 命令的 `--date` 参数的运用，应该要求把提交日期设定在过去，比如昨天或者上周，才是合理的应用场景。
+It's a strange task to set a commit date in the future, but Git is a time
+machine. If you're testing the use of the `--date` parameter of the `git
+commit` command, it can be sensible to set the commit date to a date in the
+past, such as yesterday or last week.
 
-设定提交时间的命令如下：
+The command to set the commit time is as follows:
 
+```shell
+git commit
+git commit --date="2016-10-10T12:01:01"
+git commit --date="10 minutes ago"
+git commit --date="noon yesterday"
+git commit --date="last friday"
 ```
-$ git commit
-$ git commit --date=“2016-10-10T12:01:01”
-$ git commit --date="10 minutes ago"
-$ git commit --date="noon yesterday"
-$ git commit --date="last friday"
-```
 
-第1条命令没有 `--date` 参数，所以默认使用当前时间作为提交时间；第2条命令的提交时间设置为“2016年10月10日的12点01分01秒”；第3条命令的提交时间设置为“10分钟之前”；第4条命令的提交时间设置为“昨天中午12点”；第5点命令的提交时间设置为“上周五的现在时刻”。第2条设置的是绝对时间，后3条设置的都是相对时间。
+Command 1 has no `--date` parameter and defaults to the current time as the
+commit time. Command 2 sets the commit time to "12:01:01 on October 10, 2016".
+Command 3 sets the commit time to "10 minutes ago" while the commit time of the
+4th command is set to "12:00 noon yesterday". Conversely, the commit time of
+the 5th command is set to "the present moment of last Friday". Note taht the
+2nd command sets the absolute time, while the last 3 commands set a relative
+time.
 
-第20关过关画面如下：
+The screen of level 20 is as follows:
 
-![第20关 commit_in_future](images/level-20-commit-in-future.png)
+![Level 20 commit_in_future](images/level-20-commit-in-future.png)

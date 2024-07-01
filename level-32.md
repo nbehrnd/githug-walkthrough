@@ -1,29 +1,40 @@
-# 第32关 checkout
 
-> Create and switch to a new branch called my_branch.  You will need to create a branch like you did in the previous level.
-> 
-> 创建并切换到新分支 my_branch。你要像上一关那样先创建一个分支。
+# Level 32 checkout
 
-上一关我们创建了分支，但是还没有切换到新分支上。如果你仔细观察，会发现 ```git branch``` 语句的结果中，在 ```master``` 前面有一个 ```*``` 号，它表示当前你所在的分支。
+> Create and switch to a new branch called my_branch. You will need to create a
+> branch like you did in the previous level.
 
-切换分支的语句是：
+In the previous level, we created a branch, but didn't switched to the new
+branch. If you look closely, you'll see that the `git branch` statement results
+in a `*` sign in front of `master`, which indicates the branch you're currently
+on.
 
-```
-$ git checkout branch-name
-$ git checkout -b branch-name
-$ git checkout -
-```
+The statement to switch branches are:
 
-第1条语句用于切换到指定的分支；第2条语句加了 ```-b``` 参数，表示创建一个分支并且切换到这个新建的分支，相当于连续执行 ```git branch branch-name``` 和 ``` git checkout branch-name```；第3条语句用于切换到上次所在的分支，当你经常在2个分支间来回切换时，用这个命令会比较方便。
-
-不知你是否还记得，第23关我们用到了这样的命令：
-
-```
-$ git checkout your-file
+```shell
+git checkout branch-name
+git checkout -b branch-name
+git checkout -b -
 ```
 
-它的作用是撤销对一个文件的修改。虽然从形式上看这个命令和本关的命令很相似，但因为参数的含义不一样，一个是文件名，一个是分支名，所以功能是完全不一样的。
+The first statement is used to switch to the specified branch already existing.
+The second statement adds the `-b` parameter to create a branch and switch to
+that new branch; it is equivalent to executing `git branch branch-name` and
+`git checkout branch-name`. The third statement is used to switch to the branch
+just previously used, which is handy when you're constantly switching back and
+forth between two branches.
 
-第32关过关画面如下：
+I don't know if you remember, but we used this command in level 23:
 
-![第32关 checkout](images/level-32-checkout.png)
+```shell
+git checkout your-file
+```
+
+What it does is undo changes to a file. Although formally this command is very
+similar to the one in this level, the function is completely different because
+the arguments have different meanings, one is a filename and the other is a
+branch name.
+
+The pass screen for level 32 is as follows:
+
+![level-32 checkout](images/level-32-checkout.png)

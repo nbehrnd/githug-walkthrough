@@ -1,17 +1,19 @@
-# 第25关 remote_url
 
-> The remote repositories have a url associated to them.  Please enter the url of remote_location.
-> 
-> 这个远程仓库有一个与它相关的 URL，请输入远程仓库 remote_location 的 URL 地址。
+# Level 25 remote_url
 
-承上关，在 `git remote` 命令后面加一个 `-v` 参数就可以查询远程仓库的 URL 了。
+> The remote repositories have a url associated to them. Please enter the url
+> of remote_location.
 
+As above, you can look up the URLs of remote repositories by adding a `-v`
+parameter to the `git remote` command.
+
+```shell
+git remote -v
 ```
-$ git remote -v
-```
 
-在查询结果中，每个远程仓库分别列出了 fetch 和 push 的地址，这是因为在有些情况下 fetch 和 push 的地址是不一样的。
+The query lists the fetch and push addresses for each remote repository,
+because in some cases the fetch and push addresses are different.
 
-第25关过关画面如下：
+The level 25 pass screen looks like this:
 
-![第25关 remote_url](images/level-25-remote-url.png)
+![level-25 remote_url](images/level-25-remote-url.png)

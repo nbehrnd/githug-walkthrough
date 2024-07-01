@@ -1,17 +1,21 @@
-# 第26关 pull
+
+# Level 26 pull
 
 > You need to pull changes from your origin repository.
-> 
-> 你需要从远程仓库 origin 拉取更新。
 
-当有多人合作一起开发一个项目时，就不止是你一个人向远程仓库提交代码了，你的伙伴也会向远程仓库提交代码。为了得到远程仓库的最新内容，要用下面的命令把内容抓下来：
+If multiple people work on a project, you likely are not the only one to commit
+code to the remote repository. To get the latest content from the remote
+repository, grab the content with the following command:
 
+```shell
+git pull remote-name branch-name
 ```
-$ git pull remote-name branch-name
-```
 
-其中，remote-name 是远程仓库的名字，branch-name 是远程仓库的分支名字，如果是主干，那就是 master。该命令执行之后，远程仓库的代码会自动合并到本地项目中。
+where `remote-name` is the name of the remote repository and `branch-name` is
+the name of the branch of the remote repository, or master if it's a trunk.
+After this command is executed, the code from the remote repository is
+automatically merged into the local project.
 
-第26关过关画面如下：
+The level 26 pass screen is as follows:
 
-![第26关 pull](images/level-26-pull.png)
+![level-26 pull](images/level-26-pull.png)

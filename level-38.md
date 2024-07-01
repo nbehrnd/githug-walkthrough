@@ -1,21 +1,26 @@
-# 第38关 merge
 
-> We have a file in the branch 'feature'; Let's merge it to the master branch.
-> 
-> 你有一个文件在分支 'feature'，把它合并到 master 分支。
+# Level 38 merge
 
-当我们在分支完成修改和测试之后，就可以把分支合并到主线上了，它的命令是：
+> We have a file in the branch 'feature'. Let's merge it with the master branch.
 
+Once we have finished modifying and testing in the branch, we can merge the
+branch to the master, which is done with the command:
+
+```shell
+git merge branch-name
 ```
-$ git merge branch-name
-```
 
-执行这条命令之前，要先切换到主线（一般是 master 分支），然后把待合并的分支名作为参数。
+Before executing this command, switch to the mainline branch (often called
+`main`, or `master`) and take the name of the branch you want to merge into as
+an argument.
+After the merge, the contents of files modified on the branch will be reflected
+on the mainline, and the branch's modification log will be added to the log.
 
-合并之后，在分支上修改过的文件的内容就会体现在主线上，而且日志中也加入了分支的修改日志。
+If the mainline and the feature branch to merge describe the same line of code
+differently, Git will indicate a merge conflict. Which version of the local
+source code should now be retained? We will learn how to resolve such a
+discrepancy in level 54.
 
-如果遇到主线和分支修改了同一行代码，就会发生冲突，后面的关卡中我们还会学习如何解决冲突。
+The level 38 pass screen is as follows:
 
-第38关过关画面如下：
-
-![第38关 merge](images/level-38-merge.png)
+![Level 38 merge](images/level-38-merge.png)

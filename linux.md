@@ -1,42 +1,45 @@
-# 附录B Linux 常用命令
 
-在命令行环境下使用 Git 时，除了执行 Git 命令，还要操作文件和目录，以下是常用的 Linux 命令：
+# Appendix B Common Linux Commands
 
-### 查看文件
+When you use Git on the command line, you need to manipulate files and
+directories in addition to executing Git commands. Here are some common Linux
+commands:
+
+## Viewing Files
 
 > ls
 
-### 查看隐藏文件
+## View hidden files
 
 > ls -a
 
-### 建目录
+## Create a directory
 
 > mkdir name
 
-### 删除目录
+## Delete directory
 
 > rmdir name
 
-不能删除非空目录
+You cannot delete a non-empty directory
 
-### 删除非空目录
+## Delete non-empty directories
 
 > rm -rf dir-name
 
-### 移动文件/目录，也可用于文件/目录改名
+## Moves files/directories, can also be used to rename files/directories
 
 > mv source target
 
-### 复制文件或目录
+## Copy a file or directory
 
 > cp source target
 
-### 查看文本文件内容
+## View the contents of a text file
 
 > cat your-file-name.txt
 
-### 从文本文件中搜索文本
+## Search for text from a text file
 
 > grep 'TODO' \*
 >

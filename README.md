@@ -1,21 +1,24 @@
-# Githug 通关攻略
 
-![封面](cover/cover.jpg)
+# githug-walkthrough / githug passing tips
 
-Githug 是一个学习 Git 的游戏，让你在游戏中轻松学习和理解 Git 的强大功能，本书详细讲解了每一关任务产生的背景、解决问题的思路和方法，并提供了清晰的过关画面。
+[Githug](https://github.com/Gazler/githug) is a playful way to familiarize
+oneself with key concepts and functions of [Git](https://git-scm.com/).
+[Zhang Even](https://githug.zhang-ou.com/) initiated with
+[githug-walkthrough](https://github.com/comehope/githug-walkthrough) a key how
+to pass the 56 levels of the former project. The interactive character of
+`githug`, the ease to reset a level in a setup separate from your valuable
+projects managed by `git` is an invitation to try and experiment different
+approaches without danger to "break things", or "loose" data and previous work
+for good. Instead, you can build "muscle memory".
 
-本书地址：[https://githug.zhang-ou.com](https://githug.zhang-ou.com)
+To provide this project a wider audience
+[this fork](https://github.com/nbehrnd/githug-walkthrough) reorganizes Zhang
+Even's work. Adopting the pattern used by
+[learnxinyminutes.com/](https://learnxinyminutes.com/), earlier answers and
+comments by Zhang Even were machine translated into English (US), edited a bit,
+and became the presentation's new default.
 
-作者：张偶
+## License
 
-作者博客：[http://www.zhang-ou.com](http://www.zhang-ou.com)
-
-封面插图由张子凡同学提供。
-
-移动端请扫码阅读：
-
-![图书地址二维码](images/qrcode.png)
-
-### License
-
-This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/).
+This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0
+International License](https://creativecommons.org/licenses/by-nc/4.0/).

@@ -1,11 +1,21 @@
-# 第41关 rebase_onto
 
-> You have created your branch from `wrong_branch` and already made some commits, and you realise that you needed to create your branch from `master`. Rebase your commits onto `master` branch so that you don't have `wrong_branch` commits.
-> 
-> 你从 `wrong_branch` 分支创建了一个名为 `readme-update` 的分支，在此分支上做了几次提交，突然你意识到你不应该从 `wrong_branch` 创建分支，而应该从 `master` 创建分支。现在你需要把 `readme-update` 上做过的提交迁移到 `master` 分支上。
+# Level 41 rebase_onto
 
-（此处尚待详细讲解）
+> You've created a branch named `readme-update` from `wrong_branch`, done a few
+> commits on it, and suddenly you realize that you shouldn't have created your
+> branch from `wrong_branch`, but rather from `master`. Now you need to migrate
+> the commits you made on `readme-update` to the `master` branch.
 
-第41关过关画面如下：
+In the command
 
-![第41关 rebase_onto](images/level-41-rebase-onto.png)
+```shell
+git rebase --onto master wrong_branch readme-update
+```
+
+branch `master` is defined as the new ancestor of branch `readme-update` by
+`--onto` (regardless if this is the branch currently checked-out, or not) while
+retaining `wrong_branch` aside.
+
+The level 41 pass screen looks like this:
+
+![level-41 rebase_onto](images/level-41-rebase-onto.png)

@@ -1,21 +1,26 @@
-# 第22关 reset_soft
 
-> You committed too soon. Now you want to undo the last commit, while keeping the index.
-> 
-> 你仓促地提交了代码，现在想取消最后一次提交，同时保持暂存区不变。
+# Level 22 reset_soft
 
-这又是一个撤销操作，撤销的是最后一次 `git commit` 命令，语法如下：
+> You committed too soon. Now you want to undo the last commit, while keeping
+> the index.
 
+This is another undo operation to undo the last `git commit` command with the
+following syntax:
+
+```shell
+git reset --soft HEAD^
 ```
-$ git reset --soft HEAD^
-```
 
-`git reset` 命令有很多复杂的参数，这里暂不细说，其中 `--soft HEAD^` 表示取消最后一次提交操作，并且暂存区和工作目录的文件均不受影响。
+The `git reset` command has a number of complex parameters (which I won't go
+into here) including `--soft HEAD^`. This means that the last commit is undone
+and that neither the staging area nor the working directory is affected.
 
-第19关的 `git commit --amend` 命令就相当于是先 `git reset --soft` 再 `git commit`。
+The `git commit --amend` command in level 19 is the equivalent of `git reset
+--soft` followed by `git commit`.
 
-在执行此命令之后，查看日志时会发现最后一次提交的日志消失了。
+When you look at the logs after executing this command, you will see that the
+last commit has disappeared.
 
-第22关过关画面如下：
+The level 22 pass screen looks like this:
 
-![第22关 reset_soft](images/level-22-reset-soft.png)
+![level-22 reset_soft](images/level-22-reset-soft.png)

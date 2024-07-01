@@ -1,17 +1,20 @@
-# 第34关 checkout_tag_over_branch
 
-> You need to fix a bug in the version 1.2 of your app. Checkout the tag `v1.2` (Note: There is also a branch named `v1.2`).
-> 
-> 你要在 1.2 版本中修复一个 bug，切换到 tag 'v1.2'（注意：现在有一个分支也叫 'v1.2'）。
+# Level 34 checkout_tag_over_branch
 
-如果存在一个和分支同名的 tag，比如都叫 'v1.2'，那么当执行 ```git checkout v1.2``` 命令时，是该切换到分支，还是该切换到 tag 呢？答案是切换到分支。
+> You need to fix a bug in the version 1.2 of your app. Checkout the tag `v1.2`
+> (Note: There is also a branch named `v1.2`).
 
-如果要切换到 tag，就需要按下面这样给出明确的说明：
+If there is a tag with the same name as the branch, say `v1.2`, should Git
+switch to the branch or the tag when issuing the command `git checkout v1.2`
+command? The answer is to switch to the branch.
 
+If you want to switch to the tag, you need to specify it as follows:
+
+```shell
+git checkout tags/tag-name
 ```
-$ git checkout tags/tag-name
-```
 
-第34关过关画面如下：
+The pass screen for level 34 looks like this:
 
-![第34关 checkout_tag_over_branch](images/level-34-checkout-tag-over-branch.png)
+![level-34
+checkout_tag_over_branch](images/level-34-checkout-tag-over-branch.png)

@@ -1,30 +1,39 @@
-# 第9关 status
 
-> There are some files in this repository, one of the files is untracked, which file is it?
-> 
-> 仓库中有一个文件是未被 Git 管理的，请问是哪一个文件？
+# Level 9 status
 
-Git 管理下的文件有多种状态，在工作中你经常需要先查询文件状态才能决定下一步做什么或怎么做，所以它的重要性和 Linux 的 `ls` 命令是一样重要的，是几乎所有操作的起点。
+> Among the files in this repository, which of them is untracked?
 
-查看仓库状态的命令是：
+Git manages files in a variety of states. You often need to check the state of
+a file before deciding what to do or how to do it next. Hence it's as important
+as the Linux `ls` command, which is the starting point for almost all
+operations.
 
+The command to check the status of a repository is:
+
+```shell
+git status
+git status -s
 ```
-$ git status
-$ git status -s
-```
 
-第1条命令表示以详细格式查看，第2条命令表示以紧凑格式查看。默认的详细格式包含以下内容：
+The first command indicates viewing in detailed format while the second command
+provides the information in a compact format. The default detailed format
+contains the following:
 
-* untracked：仓库里新建的文件，或者从别的地方复制到仓库里的文件，它们的状态都是 "untracked"，它们被用红字显示在查询结果的 "Untrakced files" 段落中。
+* untracked: Files that are newly created in the repository, or copied into the
+  repository from somewhere else, have a status of "untracked", and they are
+  displayed in red in the "Untracked files" paragraph of the query result.
+* modified: Files that have been edited have a status of "modified" and are
+  shown in red in the "Changes not staged for commit" section of the query.
+* staged: Files added to the staging area by the `git add` command become
+  "staged" and are displayed in green in the "Changes to be committed" section of
+  the query.
 
-* modified：被编辑过的文件的状态就变为 "modified"，它们被用红字显示在查询结果的 "Changes not staged for commit" 段落中。
+If you're confused by the statuses above, go back to level 3 and take a closer
+look at the "Git File Lifecycle" diagram.
 
-* staged：通过 `git add` 命令加入到暂存区的文件的状态就变为 "staged"，它们被用绿字显示在查询结果的 "Changes to be committed" 段落中。
+Levels 9 and 10 test your ability to read the results of a git status query,
+with level 9 asking you to identify files in untracked status from the results.
 
-如果上面的状态把你搞乱了，请翻到前面第3关，再仔细看一下“Git 文件生命周期”那张图。
+The screen for level 9 looks like this:
 
-第9关和第10关考核是正是你对 git status 查询结果的阅读能力，第9关是要你从查询结果中识别出 untracked 状态的文件。
-
-第9关过关画面如下：
-
-![第9关 status](images/level-9-status.png)
+![level-9 status](images/level-9-status.png)

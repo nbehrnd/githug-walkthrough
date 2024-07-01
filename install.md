@@ -1,29 +1,53 @@
-# Githug 安装和使用方法
+# Githug installation and usage
 
-先安装好 [git](https://git-scm.com/) 和 [ruby](https://www.ruby-lang.org/) 的运行环境，略。
+First install [git](https://git-scm.com/) and
+[ruby](https://www.ruby-lang.org/). `githug` itself is programmed in Ruby and is
+is installed via the [rubygems repository](https://rubygems.org/) by
 
-Githug 运行在 ruby 环境下，通过 gem 安装：
-
+```shell
+gem install githug
 ```
-$ gem install githug
-```
 
-安装好之后，输入命令 `githug`，屏幕会提示“No githug directory found, do you wish to create one? ”，输入 `y` 后回车，提示已经创建了一个名为 git_hug 的新目录，并显示第1关的名称、难度和任务。切换到 git_hug 目录，准备开始闯关。
+Once installed, enter the command `githug` in a folder easily accessible to you.
+Initially, you'll be prompted with
 
-![githug 初始化](images/githug-initialization.png)
+> No githug directory found, do you wish to create one?
 
-在闯关之间先学习 githug 的4个内部命令：
+which you should reply by `y` and then confirm by `Enter` to create a new local
+directory `git_hug`. At every level, `githug` uses this special directory to
+provide the (if necessary, refreshed) data to work with. There is a brief
+outline about the task ahead. The number of stars indicate the difficulty.
 
-* `githug play`：闯关，即验证你是否已经完成了关卡要求的任务，如果完成了，就会自动跳到下一关。因为这个命令最常用，所以可以缩写成 githug，省略后面的 play。
+Just switch to the `git_hug` directory and get ready to break in.
 
-* `githug hint`：提示，如果你对某个任务没有头绪，可以从这个提示信息得到一些启发。
+![githug initialization](images/githug-initialization.png)
 
-* `githug reset`：重置，执行任务的过程是用 git 命令操作文件，但是如果改来改去地把文件弄乱了想重新过这关，就要用这个命令恢复到初始状态。
+Learn the 4 internal commands of `githug` between break-ins:
 
-* `githug levels`：查看55关的各自名称。
+* `githug play`: break in, i.e. verify that you have completed the tasks
+  required by the level. If you have, you will automatically jump to the next
+  level. Since this is the most commonly used command, it can be abbreviated to
+  `githug`, omitting the `play` at the end.
+* `githug hint`: if you don't have a clue about a certain task, you can get some
+   inspiration from this hint.
+* `githug reset`: Normally, you advance toward the next level by one `git`
+  related command. However, if you messed up the file(s) and now want start at
+  this specific level (e.g., `githug reset 18`) with a pristine slate, or just
+  venture out a different idea to address the problem, use this command to reset
+  the relevant files.
+* `githug levels`: see the names of each of the 56 levels.
 
-下图是执行 `githug play` 和 `githug hint` 命令的效果：
+The image below shows the effect of running the `githug play` and `githug hint`
+commands:
 
-![githug play 和 githug hint](images/githug-play-and-githug-hint.png)
+![githug play and githug hint](images/githug-play-and-githug-hint.png)
 
-因为第1关还没过，所以用红字警告 "Sorry, this solution is not quite right!"（任务还没有完全解决呢），给出的提示是 "You can type 'git' in your shell to get a list of available git commands."（先用 'git' 命令列出常用命令看看吧）。
+Since level 1 is not yet passed, the warning
+
+> Sorry, this solution is not quite right!
+
+indicates the task wasn't  quite solved yet (it is given in red).  The later
+command prompts you a hint, i.e.
+
+> You can type `git --help` or  `git` in your shell to get a list of available
+> git commands.

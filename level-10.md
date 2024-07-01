@@ -1,11 +1,11 @@
-# 第10关 number_of_files_committed
 
-> There are some files in this repository, how many of the files will be committed?
-> 
-> 仓库中有多少文件即将被提交？
+# Level 10 number_of_files_committed
 
-这一关是要你从查询结果中识别出 staged 状态的文件。
+> There are some files in this repository; how many of them are staged for a
+> commit?
 
-第10关过关画面如下：
+This level asks you to identify files in staged state from the query results.
 
-![第10关 number_of_files_committed](images/level-10-number-of-files-committed.png)
+The screen for level 10 is shown below:
+
+![Level 10 number_of_files_committed](images/level-10-number-of-files-committed.png)

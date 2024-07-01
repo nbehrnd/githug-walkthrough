@@ -1,33 +1,43 @@
-# 第42关 repack
 
-> Optimise how your repository is packaged ensuring that redundant packs are removed.
-> 
-> 优化你的仓库，重新打包，并清除多余的包。
+# Level 42 repack
 
-在第1关里我们提到，当 Git 项目初始化时，会创建一个隐藏的名为 .git 的子目录，用于存放 Git 管理仓库要用到的文件。在 Git 的世界里，一个文件是一个 Git 对象，一次提交也是一个 Git 对象，它们被存储在 .git/objects/ 目录下：
+> Optimise how your repository is packaged ensuring that redundant packs are
+> removed.
 
-```
+As we mentioned in level 1, when a Git project is initialized, Git creates a
+hidden subdirectory `.git` with files to manage the repository. In the Git
+world, a file is a Git object, a commit is a Git object, and they are stored in
+the path of `.git/objects/ directory`:
+
+```shell
 $ ls .git/objects/
-4d    a0    e6    info    pack
+4d a0 e6 info pack
 ```
 
-其中前3个目录的目录名长为2个数字字母，分别各存放1个对象。在 Git 的操作越多，产生的对象就越多，为了优化仓库的效率，你可以手工把对象打包：
+The first three of these directories have directory names that are two numeric
+letters long, and each holds one object. The more you do in Git, the more Git
+objects you generate. To optimize the efficiency of your repository, you can
+pack the objects manually:
 
-```
-$ git repack
-$ git repack -d
+```shell
+git repack
+git repack -d
 ```
 
-第1条命令是把对象打包到一起，第2条命令是在打包后删除已作废的对象。执行完打包命令之后，.git/objects/pack/ 目录下会生成2个文件：
+The first command packs objects together, and the second command removes
+objects that have been invalidated after packing. After executing the repack
+command, 3 files are created in the `.git/objects/pack/` directory:
 
-```
+```shell
 $ ls .git/objects/pack/
 pack-b7b37f445a40715c249bf8c0df9631e9fd6c8f4b.idx
 pack-b7b37f445a40715c249bf8c0df9631e9fd6c8f4b.pack
+pack-b7b37f445a40715c249bf8c0df9631e9fd6c8f4b.rev
 ```
 
-.pack 是包文件，.idx 是包的索引文件。
+In this listing, `.pack` is the package file and `.idx` is the package index
+file.
 
-第42关过关画面如下：
+The level 42 pass screen is as follows:
 
-![第42关 repack](images/level-42-repack.png)
+![level-42 repack](images/level-42-repack.png)

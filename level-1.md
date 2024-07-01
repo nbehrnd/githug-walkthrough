@@ -1,17 +1,23 @@
-# 第1关 init
 
-> A new directory, ‘git_hug’, has been created; initialize an empty repository in it.
-> 
-> 把 'git_hug' 这个新建的目录变为一个可以被 Git 管理的仓库。
+# Level 1 init
 
-如果你准备把一个本地目录让 Git 管理起来，要先做初始化工作。本地目录可以是空目录，也可以是已经存有文件的目录。
+> A new directory, `git_hug`, has been created; initialize an empty repository
+> in it.
 
-Git 仓库的初始化命令是：
+If you're going to make a local directory manageable by Git, you need to
+initialize it first. A local directory can be empty, or it can be a directory
+that already has files in it.
 
+The command to initialize a Git repository is:
+
+```shell
+git init
 ```
-$ git init
-```
 
-该命令将创建一个名为 .git 的子目录，这个子目录含有 Git 管理仓库时要用的文件，.git 是一个隐藏目录，可以用 `ls -a` 查看。
+This command creates a subdirectory called .git, which contains the files that
+Git will use to manage your repository. .git is a hidden directory that can be
+viewed with `ls -a`.
 
-![第1关 init](images/level-1-init.png)
+git is a hidden directory that can be viewed with `ls -a`.
+
+![level-1 init](images/level-1-init.png)

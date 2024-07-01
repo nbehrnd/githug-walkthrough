@@ -1,19 +1,21 @@
-# 第29关 diff
 
-> There have been modifications to the 'app.rb' file since your last commit. Find out whick line has changed.
-> 
-> 最后一次提交之后，你又修改了 'app.rb' 这个文件。找到哪一行被修改过。
+# Level 29 diff
 
-如果仓库中的文件被修改过，它的状态就变为 'modified'，可以使用下面的命令查看被修改的细节：
+> Since your last commit, file `app.rb` was modified. Find out which line has
+> changed.
 
+If a file in the repository has been edited, its status changes to `modified`.
+You can use the following command to see the details of what has been changed:
+
+```shell
+git diff
+git diff your-file
 ```
-$ git diff
-$ git diff your-file
-```
 
-第1条命令是列出所有被修改过的文件的细节，第2条命令是列出指定文件的被修改过的细节。
+The first command lists the details of all the files that have been modified.
+The second command lists the modified details of the specified file.
 
-比如，你有一个名为 a.txt 的文件，内容如下：
+For example, you have a file `a.txt` with the following content:
 
 ```
 a1
@@ -27,7 +29,7 @@ a8
 a9
 ```
 
-然后，你把其中的 'a5' 改成了 'bbb5'，内容变成：
+Then you change entry `a5` into `bbb5`, the content becomes:
 
 ```
 a1
@@ -41,12 +43,15 @@ a8
 a9
 ```
 
-那么 `git diff` 的结果是这样的:
+Then `git diff` looks like this.
 
-![git diff 的结果](images/level-29-diff-git-diff-result.png)
+![result of git diff](images/level-29-diff-git-diff-result.png)
 
-其中 `@@ -2,7 +2,7 @@` 表示修改的内容是从第2行至第7行，接下来列出第2行至第7行的内容（其实只修改了第5行这1行，但会列出这1行的前3行和后3行）。其中红色的 `-a5` 和绿色的 `+bbb5` 表示把 'a5' 改为了 'bbb5'。
+Where `@@ -2,7 +2,7 @@` means that the changes were made from line 2 to line 7,
+and then lists the contents of lines 2 to 7 (actually, only line 5 was changed,
+but it lists the first 3 lines and the next 3 lines of that line). The red
+`-a5` and green `+bbb5` indicate that `a5` has been changed to `bbb5`.
 
-第29关过关画面如下：
+The screen for level 29 is as follows:
 
-![第29关 diff](images/level-29-diff.png)
+![Level 29 diff](images/level-29-diff.png)

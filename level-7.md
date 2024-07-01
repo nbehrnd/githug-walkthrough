@@ -1,24 +1,30 @@
-# 第7关 ignore
 
-> The text editor 'vim' creates files ending in '.swp' (swap files) for all files that are currently open.  We don't want them creeping into the repository.  Make this repository ignore '.swp' files.
-> 
-> 文本编辑器 'vim' 会自动创建以 '.swp' 结尾的临时交换文件，我们不想让这些文件进入到仓库，让仓库忽略掉这些 '.swp' 文件。
+# Level 7 ignore
 
-在开发时经常会因编辑器、IDE、编译器或其他什么程序自动生成一些临时文件、日志文件什么的，这些都不算源代码，所以不应该让 Git 来管理。
+> The text editor 'vim' creates files ending in `.swp` (swap files) for all
+> files that are currently open. We don't want them creeping into the
+> repository. Make this repository ignore those swap files which are ending in
+> `.swp`.
 
-.gitignore 文件存放在仓库的根目录下，专用于配置可忽略文件的规则，它是一个文本文件，每行书写一条规则，常用的规则举例如下：
+When you're developing, you'll often have editors, IDEs, compilers, or other
+programs that automatically create temporary files, log files, or whatever,
+which aren't considered source code and hence shouldn't be managed by Git.
+
+The `.gitignore` file stored in the root directory of your repository is used
+to configure rules for ignoring files. It is a text file with one rule per
+line, and examples of common rules are as follows:
 
 ```
-# 忽略掉文件名是 foo.txt 的这个文件
+# Ignore the file named foo.txt.
 foo.txt
 
-# 忽略所有 log 文件
+# Ignore all *.log files
 *.log
 
-# 但 important.log 是个例外，不忽略
+# With the exception of important.log, which is not ignored.
 !imprtant.log
 ```
 
-第7关过关画面如下：
+Level 7 passes with the following screen:
 
-![第7关 ignore](images/level-7-ignore.png)
+![level-7 ignore](images/level-7-ignore.png)

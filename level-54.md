@@ -1,23 +1,30 @@
-# 第54关 conflict
 
-> You need to merge mybranch into the current branch (master). But there may be some incorrect changes in mybranch which may cause conflicts. Solve any merge-conflicts you come across and finish the merge.
-> 
-> 你要把名为 mybranch 的分支合并到当前分支 master 中，但是可能有些地方的修改会引起冲突。请解决冲突，完成合并。
+# Level 54 conflict
 
-在第38关我们学习过 `git merge` 命令，但在工作中难免会发生合并冲突。发生冲突的原因是合并分支与被合并分支都修改了同一个文件的同一行代码，此时 Git 系统要求你介入，决定是保留你的代码还是别人的代码，或者都保留下来。
+> You need to merge mybranch into the current branch (master). But there may be
+> some incorrect changes in mybranch which may cause conflicts. Solve any
+> merge-conflicts you come across and finish the merge.
 
-当发生冲突时，Git 会给出以下提示：
+We learned about the `git merge` command in level 38. But it's not uncommon to
+have merge conflicts in the course of your work. A conflict occurs when both
+the merging branch and the branch being merged modify the same line of code in
+the same file. Git asks you to intervene and decide whether to keep your code,
+someone else's code, or both.
 
-```
+When a conflict occurs, Git gives you the following message:
+
+```shell
 $ git merge mybranch
 Auto-merging poem.txt
 CONFLICT (content): Merge conflict in poem.txt
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
-以上信息告诉你自动合并失败，需要你手动解决冲突并提交修改后的结果。在本关中，是一个名为 poem.txt 的文件的第2行代码发生了冲突。
+This message tells you that automatic merge failed, and that you need to
+manually fix conflicts and then commit the result. In this case, the conflict
+is in line 2 of a file called `poem.txt`.
 
-这时你可以编辑有冲突的文件，文件内容如下：
+At this point you can edit the file with the conflict, which looks like this:
 
 ```
 Humpty dumpty
@@ -27,11 +34,17 @@ Categorized shoes by color
 Sat on a wall
 >>>>>>> mybranch
 Humpty dumpty
-Had a great fall
+I'm not sure if I'm going to be able to do it.
 ```
 
-其中7个左尖括号 `<<<<<<<` 和7个右尖括号 `>>>>>>>` 之间的区域是冲突的部分，而中间的7个等号 `=======` 则把有冲突的代码分开，上部分是你的代码（通常是主线代码），下部分是别人的代码（通常是开发分支的代码）。编辑这部分内容，保留你想要的，删除你不要的，保存退出，再单独提交这个文件即可。
+The area between the 7 left pointing brackets `<<<<<<<` and the 7 right
+pointing brackets `>>>>>>>` is the conflicting section. The 7 equals signs in
+the middle `=======` separate the conflicting code: the section above is your
+code (usually the mainline code), and the below the line is someone else's code
+(usually the code from the development branch). Just edit this section; keep
+what you want, delete what you don't want. Save the edit, exit, and submit this
+commit anew.
 
-第54关过关画面如下：
+The level 54 pass screen is as follows:
 
-![第54关 conflict](images/level-54-conflict.png)
+![Level 54 conflict](images/level-54-conflict.png)

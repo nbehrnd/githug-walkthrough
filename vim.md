@@ -1,55 +1,66 @@
-# 附录C Vim 常用命令
+# Appendix C Common Vim Commands
 
-Linux 的默认文本编辑器是 Vim，它的操作方法和图形化界面下的文本编辑器有很大区别，以下是常用的 Vim 命令：
+The default text editor for Linux is Vim. It equally is provided in within the
+`git shell` for instance by [tortoisegit](https://tortoisegit.org/) for Windows
+as an additional interface to `git` to the graphical one in the context menu.
 
-### 切换到编辑状态
+Because Vim operates quite differently then text editors with a graphical
+interface, here a couple of commonly used commands:
+
+## Switch to editing state
 
 > i
 
-### 切换到命令状态
+## Switch to command state
 
 > ESC
 
-### 保存
+## Save
 
 > :w
 
-### 退出
+## Exit
 
 > :q
 
-### 保存并退出
+## Save and exit
 
 > :wq
 
-### 退出不保存
+## Exit without saving
 
 > :q!
 
-### 删除字符
+## Delete characters
 
 > x
 
-### 删除光标处到单词词尾
+## Delete from the cursor to the end of the word
 
 > dw
 
-### 删除光标处到行尾
+## Delete cursor to end of line
 
 > d$
 
-### 删除光标所在行
+## Delete the cursor line
 
 > dd
 
-### 撤销
+## Undo
 
 > u
 
-### 粘贴
+## Paste
 
 > p
 
-### 替换光标处字符
+## Replace cursor character
 
-> 先输入 r，再输出一个字符
+> Type r, then output a character
+
+## resources to learn vim
+
+- [vim.org](https://www.vim.org/docs.php)
+- [learnxinyminutes.com/docs/vim/](https://learnxinyminutes.com/docs/vim/)
+- [Wikipedia](https://en.wikipedia.org/wiki/Vim_(text_editor))

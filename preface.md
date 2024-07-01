@@ -1,12 +1,25 @@
-# 前言
+# Preface
 
-Git 包含大量命令，但只看文档是学不会这些命令的，必须要动手实践。但和学习编程不一样的是，不同的 Git 命令用于解决特定场景下的问题，搭建实验场景既麻烦又不便于和其他人分享。
+Git contains a lot of commands, but you can't learn them by just reading the
+documentation; you have to do it. But unlike learning to program, different Git
+commands are used to solve problems in specific scenarios, and building
+experimental scenarios is cumbersome and not easy to share with others.
 
-Githug 应运而生，它以游戏的形式设计了55个应用场景，每过一关就会自动搭建好下一关的实验场景，包括创建场景中需要的文件、提交历史和分支。
+Githug was developed for this purpose. It has 55 application scenarios designed
+in the form of a game, and every time you pass a level, it automatically builds
+the next scenario, including creating the files, commit history, and branches
+needed in the scenario.
 
-除了常用的初始化、克隆、提交等命令之外，游戏中还涉及到多种恢复和取消操作、分支操作、日志历史操作，让你可以从多个角度了解到 Git 的强大功能。
+In addition to commonly used commands such as initialize, clone, and commit,
+the game also involves a variety of restore and cancel operations, branching
+operations, and log history operations, so you can understand the power of Git
+from multiple perspectives.
 
-本书详细讲解了每一关任务产生的背景、解决问题的思路和方法，并提供了清晰的过关画面。希望这本书能帮你快速掌握 Git，并激起探寻它的设计原理的兴趣。
+This book explains in detail the background of the tasks generated in each
+level, the ideas and methods to solve the problems, and provides clear passing
+screens. I hope this book will help you quickly master Git, and stimulate your
+interest in exploring its design principles.
 
-因本人学浅识薄，水平所限，书中难免错漏之处，望您不吝赐教，感激不尽！
-
+Because of my shallow knowledge and level of limitations, it is inevitable that
+the book errors and omissions, I hope that you do not hesitate to give advice,
+thank you!
